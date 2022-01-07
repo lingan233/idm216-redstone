@@ -1,0 +1,54 @@
+/* ----------General------------ */
+
+@import 'normalize.css';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css2?family=Signika';
+
+* {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+h1 {
+    color: black;
+    font-family: 'Signika', sans-serif;
+}
+
+body {
+    background-color: #064660;
+    
+}
+
+div {
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.team-name {
+    background-color: #FDCA40;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    padding: .5rem 2rem;
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+.circle {
+    background-color: #63A088;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50rem;
+    z-index: -1;
+    position: absolute;
+}
+
+.circle:nth-child(1) {
+    left: -7rem;
+    top: -7rem;
+}
+
+.circle:nth-child(2) {
+    right: -7rem;
+    bottom: -7rem;
+}
