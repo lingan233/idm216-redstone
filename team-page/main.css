@@ -17,17 +17,19 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    margin: 0;
 }
 
 h3 {
     font-size: 1rem;
+    margin: .25rem 0;
 }
 
 h4 {
     font-size: .75rem;
-    margin-top: -1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
+
 body {
     background-color: #064660;
     overflow-x: hidden;
@@ -83,13 +85,31 @@ img {
     width: 7rem;
     height: 7rem;
 }
+
 /* ---------Responsive------------- */
 
 @media only screen and (min-width: 50rem) {
     img {
-        width: 8rem;
-        height: 8rem;
-        transition: .25s;
+        width: 9rem;
+        height: 9rem;
+        transition: .285s;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        margin: .5rem 0;
+    }
+
+    h4 {
+        font-size: 1rem;
     }
 }
 
@@ -97,33 +117,42 @@ img {
     .team-name {
         margin: 2rem;
     }
+
     .wrapper {
         height: 35rem;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
-        /* background-color: pink; */
     }
+
     h1 {
         font-size: 3rem;
     }
+
     .container:not(:first-child) {
         align-self: flex-end;
-        /* background-color: green; */
     }
+
     .container:first-child {
         flex-basis: 100%;
         justify-content: center;
-        /* background-color: grey; */
     }
+
     .container:first-child h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
+
     .container:first-child h3 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
-    .container:first-child div img{
-        width: 15rem;
-        height: 15rem;
+
+    .container:first-child h4 {
+        font-size: 1.25rem;
     }
+
+    .container:first-child div img {
+        width: 18rem;
+        height: 18rem;
+    }
+
 }
