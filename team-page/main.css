@@ -12,11 +12,25 @@
 h1 {
     color: black;
     font-family: 'Signika', sans-serif;
+    font-size: 2.5rem;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: .75rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
 body {
     background-color: #064660;
-    
+    overflow-x: hidden;
 }
 
 div {
@@ -24,12 +38,24 @@ div {
     padding: .5rem;
 }
 
+.wrapper {
+    width: fit-content;
+    margin: auto;
+}
+
+.container {
+    width: fit-content;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+}
+
 .team-name {
     background-color: #FDCA40;
     border-radius: 100px;
     display: flex;
     justify-content: center;
-    padding: .5rem 2rem;
+    padding: 0 3rem;
     width: fit-content;
     margin: 2rem auto;
 }
@@ -51,4 +77,53 @@ div {
 .circle:nth-child(2) {
     right: -7rem;
     bottom: -7rem;
+}
+
+img {
+    width: 7rem;
+    height: 7rem;
+}
+/* ---------Responsive------------- */
+
+@media only screen and (min-width: 50rem) {
+    img {
+        width: 8rem;
+        height: 8rem;
+        transition: .25s;
+    }
+}
+
+@media only screen and (min-width: 70rem) {
+    .team-name {
+        margin: 2rem;
+    }
+    .wrapper {
+        height: 35rem;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: pink; */
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .container:not(:first-child) {
+        align-self: flex-end;
+        /* background-color: green; */
+    }
+    .container:first-child {
+        flex-basis: 100%;
+        justify-content: center;
+        /* background-color: grey; */
+    }
+    .container:first-child h2 {
+        font-size: 3rem;
+    }
+    .container:first-child h3 {
+        font-size: 1.5rem;
+    }
+    .container:first-child div img{
+        width: 15rem;
+        height: 15rem;
+    }
 }
