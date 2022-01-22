@@ -18,16 +18,12 @@ h1 {
 h2 {
     font-size: 2rem;
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 h3 {
     font-size: 1rem;
     margin: .25rem 0;
-}
-
-h4 {
-    font-size: .75rem;
-    margin-bottom: 1rem;
 }
 
 body {
@@ -43,11 +39,12 @@ div {
 .wrapper {
     width: fit-content;
     margin: auto;
+    padding: 2rem;
 }
 
 .container {
-    width: fit-content;
-    margin: 1rem;
+
+    margin: 0 1rem;
     display: flex;
     align-items: center;
 }
@@ -118,18 +115,34 @@ img {
         margin: 2rem;
     }
 
+    .container {
+        width: 30rem;
+        /* background-color: red; */
+    }
+
     .wrapper {
-        height: 35rem;
+        height: 30rem;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
     }
+    /* .container:nth-child(odd) {
+        margin-left: 10rem;
+    } */
 
-    h1 {
-        font-size: 3rem;
+    /* .container:first-child {
+        margin-left: 15rem;
     }
 
-    .container:not(:first-child) {
+    .container:last-child {
+        margin-right: 10rem;
+    } */
+
+    /* h2 {
+        font-size: 2.5rem;
+    } */
+
+    /* .container:not(:first-child) {
         align-self: flex-end;
     }
 
@@ -153,6 +166,6 @@ img {
     .container:first-child div img {
         width: 18rem;
         height: 18rem;
-    }
+    } */
 
 }
