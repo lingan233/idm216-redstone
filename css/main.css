@@ -116,7 +116,7 @@ img {
     }
 
     .container {
-        width: 30rem;
+        width: 32rem;
         /* background-color: red; */
     }
 
@@ -126,6 +126,12 @@ img {
         display: flex;
         flex-wrap: wrap;
     }
+
+    img {
+        width: 11rem;
+        height: 11rem;
+    }
+
     /* .container:nth-child(odd) {
         margin-left: 10rem;
     } */
