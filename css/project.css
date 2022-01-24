@@ -18,8 +18,23 @@ header {
 
 .wrapper {
     padding: 1.5rem;
+    margin: auto;
 }
 
 div {
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+
+@media only screen and (min-width: 50rem) {
+.wrapper {
+    width: 90%;
+}
+}
+
+@media only screen and (min-width: 70rem) {
+    .wrapper {
+        width: 70%;
+    }
 }
