@@ -5,4 +5,4 @@
 - https://linganzheng.com/idm216/team.html/
 - https://linganzheng.com/idm216/project.html/
 ## Editor Setup
-- VSC
+- Visual Studio Code
