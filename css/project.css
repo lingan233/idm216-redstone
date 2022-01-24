@@ -2,9 +2,23 @@
     width: 50%;
 } */
 
+body{
+    background-color: #f1f1f1;
+}
+
+
+div {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+img{
+    max-width: 90%;
+}
+
 h1 {
     color: white;
-    text-align: center;
+    /* text-align: center; */ /* Commented this bit out here to align with new look */
 }
 
 h2 {
@@ -14,6 +28,28 @@ h2 {
 header {
     background-color: #EC7E5B;
     padding: .5rem 1.5rem;
+    display: flex; /* Added these two bits here to  */
+    flex-direction: left;
+}
+
+
+#project-nav { /* This bit here is for the <nav> tags on our project page. */
+    display: flex;
+    flex-direction: left;
+    padding-top: 2em;
+    padding: 1em;
+}
+
+#project-nav-home { /* This bit here is specifically for the link to go back home. */
+    align-items: center;
+    display: flex;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+#project-nav-home p { /* This bit here is specifically for the text in the link, disregarding the arrow. */
+    color: black;
+    padding-left: .5em;
 }
 
 .wrapper {
@@ -21,20 +57,37 @@ header {
     margin: auto;
 }
 
-div {
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+.wrapper h2{
+    padding: 1em;
+    text-align: center;
+}
+
+.wrapper img{
+    padding: 1em;
 }
 
 
 @media only screen and (min-width: 50rem) {
-.wrapper {
+    
+    .img-grid{ /* Added in these rules to align with the responsive design of Joey's template*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wrapper {
     width: 90%;
 }
+
+.wrapper h2{ /* Added in these rules to align with the responsive design of Joey's template*/
+    text-align: left;
+}
+
 }
 
 @media only screen and (min-width: 70rem) {
     .wrapper {
         width: 70%;
     }
+
+
 }
