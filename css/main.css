@@ -6,11 +6,9 @@
 
 * {
     font-family: "Roboto", sans-serif;
-    color: white;
 }
 
 h1 {
-    color: black;
     font-family: 'Signika', sans-serif;
     font-size: 2.5rem;
 }
@@ -26,71 +24,18 @@ h3 {
     margin: .25rem 0;
 }
 
-body {
-    background-color: #064660;
-    overflow-x: hidden;
-}
-
-div {
+/* div {
     margin: .5rem;
     padding: .5rem;
-}
-
-.wrapper {
-    width: fit-content;
-    margin: auto;
-    padding: 2rem;
-}
-
-.container {
-
-    margin: 0 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.team-name {
-    background-color: #FDCA40;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    padding: 0 3rem;
-    width: fit-content;
-    margin: 2rem auto;
-}
-
-.circle {
-    background-color: #63A088;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50rem;
-    z-index: -1;
-    position: absolute;
-}
-
-.circle:nth-child(1) {
-    left: -7rem;
-    top: -7rem;
-}
-
-.circle:nth-child(2) {
-    right: -7rem;
-    bottom: -7rem;
-}
+} */
 
 img {
-    width: 7rem;
-    height: 7rem;
+    max-width: 100%;
 }
 
 /* ---------Responsive------------- */
 
 @media only screen and (min-width: 50rem) {
-    img {
-        width: 9rem;
-        height: 9rem;
-        transition: .285s;
-    }
 
     h1 {
         font-size: 3rem;
@@ -110,68 +55,4 @@ img {
     }
 }
 
-@media only screen and (min-width: 70rem) {
-    .team-name {
-        margin: 2rem;
-    }
-
-    .container {
-        width: 32rem;
-        /* background-color: red; */
-    }
-
-    .wrapper {
-        height: 30rem;
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    img {
-        width: 11rem;
-        height: 11rem;
-    }
-
-    /* .container:nth-child(odd) {
-        margin-left: 10rem;
-    } */
-
-    /* .container:first-child {
-        margin-left: 15rem;
-    }
-
-    .container:last-child {
-        margin-right: 10rem;
-    } */
-
-    /* h2 {
-        font-size: 2.5rem;
-    } */
-
-    /* .container:not(:first-child) {
-        align-self: flex-end;
-    }
-
-    .container:first-child {
-        flex-basis: 100%;
-        justify-content: center;
-    }
-
-    .container:first-child h2 {
-        font-size: 3.5rem;
-    }
-
-    .container:first-child h3 {
-        font-size: 1.75rem;
-    }
-
-    .container:first-child h4 {
-        font-size: 1.25rem;
-    }
-
-    .container:first-child div img {
-        width: 18rem;
-        height: 18rem;
-    } */
-
-}
+@media only screen and (min-width: 70rem) {}

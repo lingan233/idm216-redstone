@@ -1,0 +1,25 @@
+/* img {
+    width: 50%;
+} */
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: #EC7E5B;
+    padding: .5rem 1.5rem;
+}
+
+.wrapper {
+    padding: 1.5rem;
+}
+
+div {
+    margin-bottom: 3rem;
+}
