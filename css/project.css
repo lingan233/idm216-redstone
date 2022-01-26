@@ -13,7 +13,8 @@ div {
 }
 
 img{
-    max-width: 90%;
+    max-width: 100%;
+    margin: .25em;
 }
 
 h1 {
@@ -26,6 +27,7 @@ h2 {
 }
 
 header {
+    width: 100%;
     background-color: #EC7E5B;
     padding: .5rem 1.5rem;
     display: flex; /* Added these two bits here to  */
@@ -33,29 +35,12 @@ header {
 }
 
 
-#project-nav { /* This bit here is for the <nav> tags on our project page. */
-    display: flex;
-    flex-direction: left;
-    padding-top: 2em;
-    padding: 1em;
-}
-
-#project-nav-home { /* This bit here is specifically for the link to go back home. */
-    align-items: center;
-    display: flex;
-    font-size: 1.5em;
-    text-decoration: none;
-}
-
-#project-nav-home p { /* This bit here is specifically for the text in the link, disregarding the arrow. */
-    color: black;
-    padding-left: .5em;
-}
-
 .wireframe-item{
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding: .25em;
+    margin-bottom: 1em;
 }
 
 .wireframe-grid{
@@ -78,18 +63,61 @@ header {
     padding: 1.5rem;
     margin: auto;
 }
+.wrapper p{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    
+}
 
 .wrapper h2{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
     padding: 1em;
-    text-align: center;
 }
 
-.wrapper img{
+
+#figma-link{
+    display: grid;
+    grid-template-columns: 10% 5fr;
+    margin-left: 2em;
+    max-width: 100%;
+}
+
+#figma-link a{
+    align-items: center;
+    display: flex;
+    font-size: 1.25em;
+    padding-left: 1em;
+}
+
+#fimga-link img{
+    max-width: 100%;
+}
+
+#project-nav { /* This bit here is for the <nav> tags on our project page. */
+    display: flex;
+    flex-direction: left;
+    padding-top: 2em;
     padding: 1em;
 }
 
+#project-nav-home { /* This bit here is specifically for the link to go back home. */
+    align-items: center;
+    display: flex;
+    font-size: 1.5em;
+    text-decoration: none;
+}
 
-@media only screen and (min-width: 50rem) {
+#project-nav-home p { /* This bit here is specifically for the text in the link, disregarding the arrow. */
+    color: black;
+    padding-left: .5em;
+}
+
+@media only screen and (min-width: 31.25rem) {
     
     .img-grid{ /* Added in these rules to align with the responsive design of Joey's template*/
         display: grid;
@@ -107,8 +135,11 @@ header {
     }   
 
     .wrapper h2{ /* Added in these rules to align with the responsive design of Joey's template*/
+        font-size: 2em;
+        font-weight: 1000;
         text-align: left;
     }
+
 
 }
 
