@@ -52,6 +52,28 @@ header {
     padding-left: .5em;
 }
 
+.wireframe-item{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.wireframe-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.wireframe-grid h3{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.wireframe-grid p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 .wrapper {
     padding: 1.5rem;
     margin: auto;
@@ -74,19 +96,31 @@ header {
         grid-template-columns: 1fr 1fr;
     }
 
-    .wrapper {
-    width: 90%;
-}
+    .wireframe-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
 
-.wrapper h2{ /* Added in these rules to align with the responsive design of Joey's template*/
-    text-align: left;
-}
+    .wrapper {
+         width: 90%;
+    }   
+
+    .wrapper h2{ /* Added in these rules to align with the responsive design of Joey's template*/
+        text-align: left;
+    }
 
 }
 
 @media only screen and (min-width: 70rem) {
     .wrapper {
         width: 70%;
+    }
+
+    .wireframe-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
 
