@@ -1,0 +1,35 @@
+header {
+    background-color: #ec7e5b;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map {
+    max-width: 95%;
+}
+
+.large-text {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+button {
+    background-color: #ec7e5b;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
