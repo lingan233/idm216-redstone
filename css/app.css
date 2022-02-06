@@ -56,7 +56,7 @@ button {
     padding: 1em;
     padding-top: 3em;
     width: 300px;
-    height: 70%px;
+    height: 70%;
     margin: 1em;
     border-radius: 1em;
     top: 10%;
@@ -271,6 +271,139 @@ textarea {
     cursor: pointer;
 }
 
+/* ---------Order Confirmation------------- */
+
+.order-confirmation{
+    padding: .25em;
+    border-radius: 1.5em;
+}
+
+
+.payment{
+    margin: 1em;
+}
+
+#debit-card{
+    border-radius: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 0;
+    margin: 0;
+}
+
+#card-thumbnail{
+    padding: 1em;
+}
+
+#payment-type{
+    font-weight: bold;
+}
+
+#card-number{
+    color: grey;
+}
+
+#card-choice{
+    padding: .5em;
+}
+
+/*Order Details Grid*/
+
+#order-details{
+    border-radius: 35px;
+    border: 1px black;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-rows: .5fr .5fr 1fr .5fr;
+    overflow: hidden;
+}
+
+#subtotal-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+#tax-details{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+#tip-choose{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 2em;
+}
+
+#tip-details{
+    display: flex;
+    align-items: center;
+}
+
+
+.tip-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.tip-input p{
+    margin: .25em;
+    padding: 0;
+}
+
+#first-box{
+    border-radius: 1em 0 0 1em;
+}
+
+#last-box{
+    border-radius: 0 1em 1em 0;
+}
+
+.tip-label {
+    display : block;
+    padding: none;
+
+}
+.tip-label:hover{
+    cursor: pointer;
+}
+
+.tip-label > input{
+    visibility: hidden;
+    position: absolute;
+}
+.tip-label > input + div{
+    border: 2px solid #b84046;
+}
+.tip-label > input:checked + div{
+    background-color: #b84046;
+    color: white;
+    border: 2px solid #b84046;
+}
+
+#tip-choose{
+    width: 90%;
+    margin: auto;
+}
+
+#total-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    font-size: 1.25em;
+    align-items: center;
+}
+
+#custom-tip{
+    margin-top: .5em;
+    text-align: right;
+}
 /* Hide the browser's default checkbox */
 .container input {
     position: absolute;
