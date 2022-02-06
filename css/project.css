@@ -117,6 +117,10 @@ header {
     padding-left: .5em;
 }
 
+#splash-page{
+    background-color: #EC7E5B;
+}
+
 @media only screen and (min-width: 31.25rem) {
     
     .img-grid{ /* Added in these rules to align with the responsive design of Joey's template*/
