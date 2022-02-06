@@ -2,12 +2,29 @@
 include_once __DIR__ . '/header.php';
 ?>
 
-<h3>Pick-up at: Drexel University</h3>
-<h2>Cart</h2>
+<div>
+    <h3 class="align-center-text">Pick-up at: Drexel University</h3>
+</div>
 
-<input type="text">
+<main class="gray-background">
+    <div class="wrapper">
+        <div class="secondary-header">
+            <img src="https://via.placeholder.com/50" alt=""></img>
+            <h1>Cart</h1>
+            <img src="https://via.placeholder.com/50" alt=""></img>
+        </div>
 
-<button>Payment</button>
+        <?php
+        include __DIR__ . '/pizza-item.php';
+        ?>
+
+        <form>
+            <textarea>Order Instructions...</textarea>
+        </form>
+
+        <button>Payment</button>
+    </div>
+</main>
 
 <?php
 include_once __DIR__ . '/footer.php';

@@ -38,16 +38,22 @@ button {
     background-color: #F6F5F8;
 }
 
-/* ---------Menu------------- */
+.align-center-text {
+    text-align: center;
+}
+
+/* ---------Menu Page------------- */
 
 section {
     border-radius: 35px;
     border: 1px black;
     background-color: white;
     padding: 1rem;
+    margin: 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 section div {
@@ -58,14 +64,14 @@ section div {
     text-align: right;
 }
 
-.menu-header {
+.secondary-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%; 
+    width: 100%;
 }
 
-.menu-header img {
+.secondary-header img {
     max-width: 100%;
 }
 
@@ -80,8 +86,27 @@ button div {
     margin-top: -1rem;
 }
 
-/* ---------Select Base------------- */
+/* ---------Select Base Page------------- */
 
-.select-base img{
+.select-base img {
     margin-top: 3rem;
+}
+
+/* ---------Cart Page------------- */
+
+form {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    resize: none;
 }
