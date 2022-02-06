@@ -9,10 +9,6 @@ include_once __DIR__ . '/header.php';
             <img src="https://via.placeholder.com/50" alt=""></img>
         </div>
         <h2>12" Inch Pizza</h2>
-        
-        <?php
-        include __DIR__ . '/pizza-item.php';
-        ?>
 
         <?php
         include __DIR__ . '/pizza-item.php';
@@ -22,10 +18,13 @@ include_once __DIR__ . '/header.php';
         include __DIR__ . '/pizza-item.php';
         ?>
 
+        <?php
+        include __DIR__ . '/pizza-item.php';
+        ?>
+        <button>Cart
+            <div>1</div>
+        </button>
     </div>
-    <button>Cart
-        <div>1</div>
-    </button>
 </main>
 
 <?php
