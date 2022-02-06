@@ -33,3 +33,54 @@ button {
     font-weight: bold;
     width: 100%;
 }
+
+.gray-background {
+    background-color: #F6F5F8;
+}
+
+/* ---------Menu------------- */
+
+section {
+    border-radius: 35px;
+    border: 1px black;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div {
+    padding: 1rem;
+}
+
+.price {
+    text-align: right;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.menu-header img {
+    max-width: 100%;
+}
+
+/* button {
+    display: flex;
+
+} */
+
+button div {
+    background-color: white;
+    color: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: -1rem;
+}

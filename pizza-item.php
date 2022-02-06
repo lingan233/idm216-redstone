@@ -1,5 +1,11 @@
 <section>
-    <h3>Pepperoni</h3>
-    <p>Customize your pizza</p>
-    <p class="price">$12.00</p>
+    <div>
+        <img src="https://via.placeholder.com/84" alt=""></img>
+    </div>
+    <div class="menu-item-text">
+        <h3>Custom Order</h3>
+        <p>Customize your own pizza for pickup!</p>
+        <p class="price">$12.00</p>
+    </div>
+
 </section>

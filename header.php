@@ -12,6 +12,5 @@
 
 <body>
 <header>
-<img src="https://via.placeholder.com/150" alt="Redstone Logo Temp">REDSTONE</img>
+<img src="https://via.placeholder.com/90" alt="Redstone Logo Temp"></img>
 </header>
-<!-- <div class="navbar">REDSTONE</div> -->
