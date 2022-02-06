@@ -8,3 +8,7 @@ include_once __DIR__ . '/header.php';
 <input type="text">
 
 <button>Payment</button>
+
+<?php
+include_once __DIR__ . '/footer.php';
+?>
