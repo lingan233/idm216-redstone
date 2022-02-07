@@ -21,12 +21,12 @@ include_once __DIR__ . '/header.php';
         <?php
         include __DIR__ . '/pizza-item.php';
         ?>
-        <a href="">
-            
+        <a href="select-base.php">
+            <button>Cart
+                <div>1</div>
+            </button>
         </a>
-        <button>Cart
-            <div>1</div>
-        </button>
+
     </div>
 </main>
 
