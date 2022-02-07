@@ -92,7 +92,6 @@ button {
 
 #splash-page{
     align-items: center;
-    /* background-color: #ec7e5b; */
     display: flex;
     flex-direction: column;
     height: 100%;
