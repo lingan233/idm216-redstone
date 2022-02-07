@@ -5,7 +5,10 @@ include_once __DIR__ . '/header.php';
     <div class="wrapper">
         <div class="button-nav">
             <button class="small-button">Back</button>
-            <button class="small-button">Done</button>
+            <a href="cart.php">
+                <button class="small-button">Done</button>
+            </a>
+
         </div>
 
         <img src="https://via.placeholder.com/300" alt="">
@@ -84,8 +87,10 @@ include_once __DIR__ . '/header.php';
                     <span class="checkmark"></span>Onions
                     <span class="topping-price">+$1.00</span>
                 </label>
-                <button>Done</button>
             </form>
+            <a href="cart.php">
+                <button>Done</button>
+            </a>
         </div>
     </div>
 </main>
