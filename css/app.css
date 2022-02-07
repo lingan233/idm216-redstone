@@ -138,6 +138,10 @@ button {
     left: 10%;
 }
 
+.orange-text {
+    color: var(--orange);
+}
+
 /* ---------Splash Page------------- */
 
 #splash-page{

@@ -15,7 +15,7 @@ include_once __DIR__ . '/header.php';
         <div class="topping-container white-background">
 
             <form action="">
-                <h2>Add Toppings</h2>
+                <h2 class="orange-text">Add Toppings</h2>
                 <h4>Extra Cheese</h4>
                 <label class="container">
                     <input type="checkbox" checked="checked">
