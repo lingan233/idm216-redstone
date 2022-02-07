@@ -8,6 +8,11 @@
     <title>REDSTONE PIZZA</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/app.css">
+    <script>
+         setTimeout(function(){
+            window.location.href = 'front.php';
+         }, 5000);
+      </script>
 </head>
 <body id="splash-page">
     <img src="https://via.placeholder.com/200">
