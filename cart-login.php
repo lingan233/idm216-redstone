@@ -10,7 +10,7 @@ include_once __DIR__ . '/header.php';
 include_once __DIR__ . '/cart.php';
 ?>
 
-<div class="pop-up">
+<div class="pop-up white-background">
     <a href="cart.php" class="close"><img src="https://via.placeholder.com/32"></a>
     <h2>Login to Account</h2>
     <input class="login-text" type="text" placeholder="Username">

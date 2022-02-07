@@ -7,7 +7,7 @@ include_once __DIR__ . '/header.php';
 <?php
 include_once __DIR__ . '/front.php';
 ?>
-            <div class="pop-up">
+            <div class="pop-up white-background">
                 <a href="front.php" class="close"><img src="https://via.placeholder.com/32"></a>
                 <h2>Pick Up Times</h2>
                 <a class="true-pick-up-time">ASAP</a>

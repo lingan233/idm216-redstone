@@ -8,12 +8,11 @@ include_once __DIR__ . '/header.php';
             <a href="cart.php">
                 <button class="small-button">Done</button>
             </a>
-
         </div>
 
         <img src="https://via.placeholder.com/300" alt="">
 
-        <div class="topping-container">
+        <div class="topping-container white-background">
 
             <form action="">
                 <h2>Add Toppings</h2>

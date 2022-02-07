@@ -8,7 +8,7 @@ include_once __DIR__ . '/header.php';
     <?php
     include __DIR__ . '/order-item.php';
     ?>
-    <section id="debit-card">
+    <section id="debit-card" class="white-background">
         <div id="card-thumbnail">
             <img src="https://via.placeholder.com/48" alt=""></img>
         </div>
@@ -20,7 +20,7 @@ include_once __DIR__ . '/header.php';
     </section>
     <br>
     <a href="">Use a different payment method?</a>
-    <div id="order-details">
+    <div id="order-details" class="white-background">
 
         <div id="subtotal-details">
             <h4>Subtotal</h4>
