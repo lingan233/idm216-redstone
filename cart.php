@@ -21,8 +21,10 @@ include_once __DIR__ . '/header.php';
         <form>
             <textarea>Order Instructions...</textarea>
         </form>
+        <a href="cart-login.php">
+            <button>Payment</button>
+        </a>
 
-        <button>Payment</button>
     </div>
 </main>
 
