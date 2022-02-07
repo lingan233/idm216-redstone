@@ -129,6 +129,12 @@ button {
     color: var(--black);
 }
 
+.cart-button {
+    position: fixed;
+    bottom: 0;
+    left: 10%;
+}
+
 /* ---------Splash Page------------- */
 
 #splash-page{
