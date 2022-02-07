@@ -4,10 +4,6 @@ body {
     background-color: #454141;
 }
 
-main {
-
-}
-
 header {
     background-color: #ec7e5b;
     min-height: 4rem;
@@ -44,9 +40,9 @@ button {
     width: 100%;
 }
 
-.gray-background {
+/* .gray-background {
     background-color: #F6F5F8;
-}
+} */
 
 .align-center-text {
     text-align: center;
@@ -73,7 +69,7 @@ button {
 
 #splash-page{
     align-items: center;
-    background-color: #ec7e5b;
+    /* background-color: #ec7e5b; */
     display: flex;
     flex-direction: column;
     height: 100%;
