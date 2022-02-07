@@ -1,3 +1,14 @@
+
+:root{
+
+    --white: #ffffff;
+    --crimson: #660a04;
+    --orange: #ec7e5b;
+    --red: #b84046;
+    --black: #454141;
+
+}
+
 /* Custom Font Rules */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
