@@ -1,20 +1,19 @@
 <?php
-
+$itemImg = 'plain-pizza.png';
 $itemName = 'Custom Order';
 $itemDescription = 'Customize your own pizza for pickup!';
 $itemPrice = '$12.00';
 
-echo $itemName;
 ?>
 
 <section>
     <div>
-        <img src="https://via.placeholder.com/84" alt=""></img>
+        <img src="imgs/menu/<?php echo $itemImg; ?>" alt=""></img>
     </div>
     <div class="menu-item-text">
-        <h3>Custom Order</h3>
-        <p>Customize your own pizza for pickup!</p>
-        <p class="price orange-text">$12.00</p>
+        <h3><?php echo $itemName; ?></h3>
+        <p><?php echo $itemDescription; ?></p>
+        <p class="price orange-text"><?php echo $itemPrice; ?></p>
     </div>
 
 </section>
