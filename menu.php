@@ -8,7 +8,7 @@ include_once __DIR__ . '/header.php';
             <h1>Menu</h1>
             <img src="https://via.placeholder.com/50" alt=""></img>
         </div>
-        <h2>12" Inch Pizza</h2>
+        <h2 class="menu-subhead">12" Inch Pizza</h2>
 
         <?php
         $itemImg = 'plain-pizza.png';
@@ -79,7 +79,7 @@ include_once __DIR__ . '/header.php';
 
         ?>
 
-        <h2>Salad</h2>
+        <h2 class="menu-subhead" id="salad-subhead">Salad</h2>
 
         <?php
         $itemImg = 'argulua-salad.png';
@@ -90,7 +90,7 @@ include_once __DIR__ . '/header.php';
 
         ?>
 
-        <h2>Drinks</h2>
+        <h2 class="menu-subhead" id="drink-subhead">Drinks</h2>
 
         <?php
         $itemImg = 'glass-coke.png';

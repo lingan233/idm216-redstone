@@ -269,8 +269,8 @@ section {
     border: 1px black;
     background-color: white;
     color: var(--black);
-    padding: .5rem;
-    margin: .25rem 0;
+    padding: .75rem;
+    margin: .25rem .25em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +280,7 @@ section {
 }
 
 section div {
-    padding: .75rem;
+    padding: .5rem;
 }
 
 .price {
@@ -362,6 +362,19 @@ textarea {
 .topping-price {
     color: gray;
     margin-left: 1rem;
+}
+
+.menu-subhead{
+    margin-right: 6em;
+    text-align: right;
+}
+
+#salad-subhead{
+    margin-right: 10em;
+}
+
+#drink-subhead{
+    margin-right: 10em;
 }
 
 /* ---------Customize Pizza Page (Checkbox)------------- */
