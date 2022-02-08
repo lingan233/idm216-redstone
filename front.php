@@ -12,8 +12,6 @@ include_once __DIR__ . '/header.php';
         <button>Review Order History</button>
     </a>
 
-</main>
-
 <?php
 include_once __DIR__ . '/footer.php';
 ?>
