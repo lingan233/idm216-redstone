@@ -82,7 +82,6 @@ h1 {
     margin-bottom: 0;
     font-size: 1.625em;
     text-align: center;
-    margin-right: 40%;
 
 }
 
@@ -333,9 +332,7 @@ section div {
 }
 
 .secondary-header {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
 }
 
@@ -365,6 +362,7 @@ a {
 
 form {
     width: 100%;
+    margin-bottom: 3em;
 }
 
 textarea {
@@ -384,10 +382,20 @@ textarea {
 /* ---------Customize Pizza Page------------- */
 
 .small-button {
+    font-family: 'Raleway', sans-serif;
+    margin: .5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    width: 18rem;
+    text-align: center;
     background-color: white;
     border: none;
     color: black;
     width: fit-content;
+    text-decoration: none;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
@@ -437,6 +445,14 @@ textarea {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+#done-link{
+    margin-top: 3em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 /* ---------Login Page------------- */

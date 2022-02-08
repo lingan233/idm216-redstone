@@ -2,7 +2,10 @@
 include_once __DIR__ . '/header.php';
 ?>
 <main class="wrapper select-base">
-    <h1>Select a Base</h1>
+<div class="secondary-header">
+                <a href="menu.php"><img src="svg/ui-back-arrow.svg" height="32" width="32"></a>
+            <h1>Select Base</h1>
+        </div>
     <img src="imgs/Menu/plain_pizza_menu.png" alt="">
     <a class="front-link" href="customize-pizza.php">Classic Red</a>
     <img src="imgs/Menu/white_pizza.png" alt="">
