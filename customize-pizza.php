@@ -18,7 +18,7 @@ include_once __DIR__ . '/header.php';
                 <h2 class="orange-text">Add Toppings</h2>
                 <h4>Extra Cheese</h4>
                 <label class="container">
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox">
                     <span class="checkmark"></span>Mozzarella
                     <span class="topping-price">+$1.00</span>
                 </label>
