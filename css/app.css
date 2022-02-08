@@ -127,6 +127,20 @@ h3 {
     align-items: center;
 }
 
+.front-link {
+    font-family: 'Raleway', sans-serif;
+    background-color: #B84046;
+    margin-top: 1em;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    width: 18rem;
+    text-align: center;
+    text-decoration: none;
+}
+
 button {
     font-family: 'Raleway', sans-serif;
     background-color: #B84046;
@@ -137,6 +151,7 @@ button {
     color: white;
     font-weight: bold;
     width: 18rem;
+    text-align: center;
 }
 
 /* .gray-background {
