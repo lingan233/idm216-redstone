@@ -156,6 +156,7 @@ button {
 
 .menu-item-text {
     color: var(--black);
+    width: 85%;
 }
 
 .cart-button {
