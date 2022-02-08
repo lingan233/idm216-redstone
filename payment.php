@@ -10,7 +10,7 @@ include_once __DIR__ . '/header.php';
     ?>
     <section id="debit-card" class="white-background">
         <div id="card-thumbnail">
-            <img src="https://via.placeholder.com/48" alt=""></img>
+            <img src="imgs/visa_icon.png" alt=""></img>
         </div>
 
         <div id="card-choice">
