@@ -152,6 +152,23 @@ button {
     font-weight: bold;
     width: 18rem;
     text-align: center;
+    cursor: pointer;
+}
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    background-color: #B84046;
+    margin: .5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    width: 18rem;
+    text-align: center;
+    cursor: pointer;
 }
 
 /* .gray-background {
@@ -204,6 +221,16 @@ button {
     left: 10%;
 }
 
+.button div {
+    background-color: white;
+    color: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: -1rem;
+}
 .orange-text {
     color: var(--orange);
 }
@@ -320,16 +347,7 @@ section div {
     padding-top: 1em;
 }
 
-button div {
-    background-color: white;
-    color: black;
-    width: 25px;
-    height: 25px;
-    border-radius: 50px;
-    margin-right: 0;
-    margin-left: auto;
-    margin-top: -1rem;
-}
+
 
 .no-underline {
     text-decoration: none;
