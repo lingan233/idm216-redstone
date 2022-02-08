@@ -346,6 +346,7 @@ a {
 
 form {
     width: 100%;
+    margin-bottom: 3em;
 }
 
 textarea {
@@ -428,6 +429,14 @@ textarea {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+#done-link{
+    margin-top: 3em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 /* ---------Login Page------------- */

@@ -8,7 +8,7 @@ include_once __DIR__ . '/header.php';
             <a href="menu-with-cart.php" class="small-button">Done</a>
         </div>
 
-        <img src="https://via.placeholder.com/300" alt="">
+        <img src="imgs/Menu/plain_pizza_menu.png" alt="">
 
         <div class="topping-container white-background">
 
@@ -85,9 +85,7 @@ include_once __DIR__ . '/header.php';
                     <span class="topping-price">+$1.00</span>
                 </label>
             </form>
-            <a href="cart.php">
-                <button>Done</button>
-            </a>
+            <a href="cart.php" class="front-link" id="done-link">Done</a>
         </div>
     </div>
 </main>
