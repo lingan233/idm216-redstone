@@ -1,3 +1,12 @@
+<?php
+
+$itemName = 'Custom Order';
+$itemDescription = 'Customize your own pizza for pickup!';
+$itemPrice = '$12.00';
+
+echo $itemName;
+?>
+
 <section>
     <div>
         <img src="https://via.placeholder.com/84" alt=""></img>
