@@ -177,6 +177,10 @@ button {
     width: 15%;
 }
 
+.drink-container {
+    height: 8rem;
+}
+
 .cart-button {
     position: fixed;
     bottom: 0;

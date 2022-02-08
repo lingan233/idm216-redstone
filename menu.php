@@ -118,10 +118,6 @@ include_once __DIR__ . '/header.php';
         $itemPrice = '$1.50';
         include __DIR__ . '/drink-item.php';
 
-        $itemImg = 'glass-coke.png';
-        $itemName = 'Glass Bottle Coke';
-        $itemPrice = '$2.00';
-        include __DIR__ . '/drink-item.php';
         ?>
 
 

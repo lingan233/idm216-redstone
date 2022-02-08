@@ -1,4 +1,4 @@
-<section>
+<section class="drink-container">
     <div class="drink-img">
         <img src="imgs/menu/<?php echo $itemImg; ?>" alt=""></img>
     </div>
