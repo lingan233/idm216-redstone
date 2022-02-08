@@ -11,12 +11,14 @@ include_once __DIR__ . '/header.php';
         <h2 class="menu-subhead">12" Inch Pizza</h2>
 
         <?php
+        $itemLink = 'select-base.php';
         $itemImg = 'plain-pizza.png';
         $itemName = 'Custom Order';
         $itemDescription = 'Customize your own pizza for pickup!';
         $itemPrice = '$12.00';
         include __DIR__ . '/pizza-item.php';
 
+        $itemLink = '';
         $itemImg = 'plain-pizza.png';
         $itemName = 'Pepperoni';
         $itemDescription = 'Fresh tomato sauce, mozzarella and pepperoni';

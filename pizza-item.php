@@ -1,4 +1,4 @@
-    <a href="select-base.php" class="no-underline">
+    <a href="<?php echo $itemLink; ?>" class="no-underline">
         <section>
             <div>
                 <img src="imgs/menu/<?php echo $itemImg; ?>" alt=""></img>
