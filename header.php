@@ -14,5 +14,5 @@
 
 <body>
 <header>
-<img src="https://via.placeholder.com/90" alt="Redstone Logo Temp"></img>
+<p id="header-text">Redstone</p>
 </header>

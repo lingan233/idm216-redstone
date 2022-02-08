@@ -82,6 +82,14 @@ h3{
     font-size: 1.25em;
 }
 
+#header-text{
+    color: var(--crimson);
+    font-family: 'raleway-bold';
+    font-size: 2.5em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
 .map {
     max-width: 95%;
 }
