@@ -8,6 +8,7 @@
     <title>REDSTONE PIZZA</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" sizes="any" type="image/png" href="imgs/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </head>
