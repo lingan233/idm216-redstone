@@ -309,6 +309,14 @@ button div {
     margin-top: -1rem;
 }
 
+.no-underline {
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}
+
 /* ---------Select Base Page------------- */
 
 .select-base img {
