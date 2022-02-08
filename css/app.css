@@ -153,6 +153,7 @@ button {
     font-weight: bold;
     width: 18rem;
     text-align: center;
+    cursor: pointer;
 }
 
 /* .gray-background {

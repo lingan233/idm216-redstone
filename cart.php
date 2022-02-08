@@ -17,7 +17,7 @@ include_once __DIR__ . '/header.php';
         <?php
         $itemImg = 'plain-pizza.png';
         $itemName = 'Custom Order';
-        $itemDescription = 'Customize your own pizza for pickup!';
+        $itemDescription = '+Pepperoni <br> +Sausage';
         $itemPrice = '$12.00';
         include __DIR__ . '/pizza-item.php';
         ?>
