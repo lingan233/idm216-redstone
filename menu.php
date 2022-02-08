@@ -11,6 +11,12 @@ include_once __DIR__ . '/header.php';
         <h2>12" Inch Pizza</h2>
 
         <?php
+
+        $itemImg = 'plain-pizza.png';
+        $itemName = 'Custom Order';
+        $itemDescription = 'Customize your own pizza for pickup!';
+        $itemPrice = '$12.00';
+
         include __DIR__ . '/pizza-item.php';
         ?>
 
@@ -21,7 +27,7 @@ include_once __DIR__ . '/header.php';
         <?php
         include __DIR__ . '/pizza-item.php';
         ?>
-        
+
         <a href="select-base.php">
             <button class="cart-button">Cart
                 <div>1</div>

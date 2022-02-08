@@ -1,10 +1,3 @@
-<?php
-$itemImg = 'plain-pizza.png';
-$itemName = 'Custom Order';
-$itemDescription = 'Customize your own pizza for pickup!';
-$itemPrice = '$12.00';
-
-?>
 
 <section>
     <div>
