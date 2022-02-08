@@ -4,10 +4,8 @@ include_once __DIR__ . '/header.php';
 <main class="gray-background">
     <div class="wrapper">
         <div class="button-nav">
-            <button class="small-button" onclick="history.back()">Back</button>
-            <a href="menu-with-cart.php">
-                <button class="small-button">Done</button>
-            </a>
+            <a class="small-button" href="select-base.php">Back</a>
+            <a href="menu-with-cart.php" class="small-button">Done</a>
         </div>
 
         <img src="https://via.placeholder.com/300" alt="">
