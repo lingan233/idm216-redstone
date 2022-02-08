@@ -164,6 +164,8 @@ button {
     border-radius: 50px;
     color: white;
     font-weight: bold;
+    display: block;
+    margin: auto;
     width: 18rem;
     text-align: center;
     cursor: pointer;
