@@ -1,4 +1,4 @@
-<!-- <a href="" class="no-underline"> -->
+<a href="" class="no-underline menu-item">
     <section class="drink-container">
         <div class="drink-img">
             <img src="imgs/menu/<?php echo $itemImg; ?>" alt=""></img>
@@ -8,4 +8,4 @@
             <p class="price orange-text"><?php echo $itemPrice; ?></p>
         </div>
     </section>
-<!-- </a> -->
+</a>

@@ -299,6 +299,10 @@ section div {
     padding: .5rem;
 }
 
+.menu-item {
+    width: 100%;
+}
+
 .price {
     text-align: right;
 }
