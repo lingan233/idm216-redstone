@@ -1,5 +1,4 @@
-
-:root{
+:root {
 
     --white: #ffffff;
     --crimson: #660a04;
@@ -20,37 +19,48 @@
     font-family: 'raleway-normal';
     font-style: normal;
     font-weight: normal;
-    src: url('../fonts/raleway-v26-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/raleway-v26-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/raleway-v26-latin-regular.ttf') format('truetype');/* Safari, Android, iOS */
-  }
-  
-  /* raleway-800 - latin */
-  @font-face {
+    src: url('../fonts/raleway-v26-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/raleway-v26-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/raleway-v26-latin-regular.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
+/* raleway-800 - latin */
+@font-face {
     font-family: 'raleway-bold';
     font-style: normal;
     font-weight: normal;
-    src: url('../fonts/raleway-v26-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/raleway-v26-latin-800.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/raleway-v26-latin-800.ttf') format('truetype'); /* Safari, Android, iOS */
-  }
-  
-  /* montserrat-700 - latin */
+    src: url('../fonts/raleway-v26-latin-800.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/raleway-v26-latin-800.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/raleway-v26-latin-800.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
+/* montserrat-700 - latin */
 @font-face {
     font-family: 'montserrat-bold';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/montserrat-v23-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/montserrat-v23-latin-700.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/montserrat-v23-latin-700.ttf') format('truetype'); /* Safari, Android, iOS */
-  }
-  
+    src: url('../fonts/montserrat-v23-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/montserrat-v23-latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/montserrat-v23-latin-700.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
 
 /*  font-family: 'Montserrat', sans-serif;  */
 
 
 body {
-    font-family: 'raleway-normal'/* , sans-serif */;
+    font-family: 'raleway-normal'
+        /* , sans-serif */
+    ;
     width: 100%;
     height: 100%;
     color: var(--white);
@@ -65,7 +75,7 @@ header {
     justify-content: center;
 }
 
-h1{
+h1 {
     font-family: 'montserrat-bold';
     font-weight: 700;
     margin-top: 1em;
@@ -75,18 +85,18 @@ h1{
 
 }
 
-h2{
+h2 {
     font-family: 'montserrat-bold';
     font-weight: 700;
 }
 
-h3{
+h3 {
     font-family: 'raleway-bold';
     font-weight: 100;
     font-size: 1.25em;
 }
 
-#header-text{
+#header-text {
     color: var(--crimson);
     font-family: 'raleway-bold';
     font-size: 2.5em;
@@ -106,7 +116,7 @@ h3{
 }
 
 .wrapper {
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
     max-width: 90%;
@@ -156,7 +166,12 @@ button {
 
 .menu-item-text {
     color: var(--black);
+    /* min-width: 60%; */
     width: 85%;
+}
+
+.drink-img {
+    width: 15%;
 }
 
 .cart-button {
@@ -175,7 +190,7 @@ button {
 
 /* ---------Splash Page------------- */
 
-#splash-page{
+#splash-page {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -188,13 +203,13 @@ button {
 /* ---------Pick-Up Time Form------------- */
 /* NOTICE: Because the Alpha has no Database functionality, the styles are currently applied to <a> tags. Will need to with <form> and <input> tags for final */
 
-.close{
+.close {
     position: absolute;
     right: 1em;
     top: 1em;
 }
 
-#confirm-pick-up-time{
+#confirm-pick-up-time {
     display: flex;
     padding: 1em;
     background-color: #b84046;
@@ -207,7 +222,7 @@ button {
     text-decoration: none;
 }
 
-.false-pick-up-time{
+.false-pick-up-time {
     display: flex;
     padding: 1em;
     background-color: #d9d9d9;
@@ -221,7 +236,7 @@ button {
 
 }
 
-.true-pick-up-time{
+.true-pick-up-time {
     display: flex;
     padding: 1em;
     background-color: #b84046;
@@ -234,8 +249,8 @@ button {
     text-decoration: none;
 }
 
-.true-pick-up-time:hover{
-   cursor: pointer;
+.true-pick-up-time:hover {
+    cursor: pointer;
 }
 
 /* ---------Menu Page------------- */
@@ -250,6 +265,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 95%;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
@@ -352,11 +368,11 @@ textarea {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
+}
+
 /* ---------Login Page------------- */
 
-.login-text{
+.login-text {
     border-radius: .5em;
     border: 1px solid lightgrey;
     padding: 1em;
@@ -364,7 +380,7 @@ textarea {
     width: 70%;
 }
 
-.google-login{
+.google-login {
     border-radius: 2em;
     padding: 1em;
     margin: 1em;
@@ -377,23 +393,23 @@ textarea {
     color: black;
 }
 
-.google-login:hover{
+.google-login:hover {
     cursor: pointer;
 }
 
 /* ---------Order Confirmation------------- */
 
-.order-confirmation{
+.order-confirmation {
     padding: .25em;
     border-radius: 1.5em;
 }
 
 
-.payment{
+.payment {
     margin: 1em;
 }
 
-#debit-card{
+#debit-card {
     border-radius: 1.5em;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -401,25 +417,25 @@ textarea {
     margin: 0;
 }
 
-#card-thumbnail{
+#card-thumbnail {
     padding: 1em;
 }
 
-#payment-type{
+#payment-type {
     font-weight: bold;
 }
 
-#card-number{
+#card-number {
     color: grey;
 }
 
-#card-choice{
+#card-choice {
     padding: .5em;
 }
 
 /*Order Details Grid*/
 
-#order-details{
+#order-details {
     border-radius: 35px;
     border: 1px black;
     background-color: white;
@@ -431,30 +447,30 @@ textarea {
     overflow: hidden;
 }
 
-#subtotal-details{
+#subtotal-details {
     display: flex;
     justify-content: space-between;
 }
 
-#tax-details{
+#tax-details {
     display: flex;
 
     justify-content: space-between;
 }
 
-#tip-choose{
+#tip-choose {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-left: 2em;
 }
 
-#tip-details{
+#tip-details {
     display: flex;
     align-items: center;
 }
 
 
-.tip-input{
+.tip-input {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -462,47 +478,50 @@ textarea {
     justify-content: center;
 }
 
-.tip-input p{
+.tip-input p {
     margin: .25em;
     padding: 0;
 }
 
-#first-box{
+#first-box {
     border-radius: 1em 0 0 1em;
 }
 
-#last-box{
+#last-box {
     border-radius: 0 1em 1em 0;
 }
 
 .tip-label {
-    display : block;
+    display: block;
     padding: none;
 
 }
-.tip-label:hover{
+
+.tip-label:hover {
     cursor: pointer;
 }
 
-.tip-label > input{
+.tip-label>input {
     visibility: hidden;
     position: absolute;
 }
-.tip-label > input + div{
+
+.tip-label>input+div {
     border: 2px solid #b84046;
 }
-.tip-label > input:checked + div{
+
+.tip-label>input:checked+div {
     background-color: #b84046;
     color: white;
     border: 2px solid #b84046;
 }
 
-#tip-choose{
+#tip-choose {
     width: 90%;
     margin: auto;
 }
 
-#total-details{
+#total-details {
     display: flex;
     justify-content: space-between;
     margin-top: 1em;
@@ -510,48 +529,48 @@ textarea {
     align-items: center;
 }
 
-#custom-tip{
+#custom-tip {
     margin-top: .5em;
     text-align: right;
 }
 
 /*Pick Up Details*/
 
-#pizza-pickup{
+#pizza-pickup {
     padding-top: 2em;
 }
 
-#pickup-details{
+#pickup-details {
     flex-direction: column;
-    
+
 }
 
-#pickup-details h2{
+#pickup-details h2 {
     font-weight: lighter;
     font-size: 1.5em;
     margin: .25em;
 
 }
 
-#pickup-details p{
+#pickup-details p {
     font-weight: 1000;
     font-size: 1.5em;
     margin: .25em;
 }
 
-#pickup-number{
+#pickup-number {
     display: flex;
     justify-content: space-between;
 }
 
 
-#pickup-time{
+#pickup-time {
     display: flex;
     justify-content: space-between;
     font-weight: lighter;
 }
 
-#pickup-locale{
+#pickup-locale {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -560,7 +579,7 @@ textarea {
     text-align: center;
 }
 
-#order-locale{
+#order-locale {
     font-weight: bold;
 }
 

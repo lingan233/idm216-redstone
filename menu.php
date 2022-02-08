@@ -90,6 +90,40 @@ include_once __DIR__ . '/header.php';
 
         ?>
 
+        <h2>Drinks</h2>
+
+        <?php
+        $itemImg = 'glass-coke.png';
+        $itemName = 'Glass Bottle Coke';
+        $itemPrice = '$2.00';
+        include __DIR__ . '/drink-item.php';
+
+        $itemImg = 'can-coke.png';
+        $itemName = 'Can Coke';
+        $itemPrice = '$1.50';
+        include __DIR__ . '/drink-item.php';
+
+        $itemImg = 'pelligrino.png';
+        $itemName = 'Pelligrino';
+        $itemPrice = '$2.50';
+        include __DIR__ . '/drink-item.php';
+
+        $itemImg = 'snapple.png';
+        $itemName = 'Snapple';
+        $itemPrice = '$2.50';
+        include __DIR__ . '/drink-item.php';
+
+        $itemImg = 'water.png';
+        $itemName = 'Water';
+        $itemPrice = '$1.50';
+        include __DIR__ . '/drink-item.php';
+
+        $itemImg = 'glass-coke.png';
+        $itemName = 'Glass Bottle Coke';
+        $itemPrice = '$2.00';
+        include __DIR__ . '/drink-item.php';
+        ?>
+
 
         <a href="select-base.php">
             <button class="cart-button">Cart
