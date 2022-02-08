@@ -6,7 +6,6 @@ include_once __DIR__ . '/header.php';
         <div class="secondary-header">
                 <a href="front.php"><img src="svg/ui-back-arrow.svg" height="32" width="32"></a>
             <h1>Menu</h1>
-            <img src="https://via.placeholder.com/50" alt=""></img>
         </div>
         <h2 class="menu-subhead">12" Inch Pizza</h2>
 
