@@ -72,7 +72,7 @@ include_once __DIR__ . '/header.php';
 
         <div id="total-details">
             <h3>Total</h3>
-            <p>$2.75</p>
+            <p>$12.75</p>
         </div>
     </div>
 
