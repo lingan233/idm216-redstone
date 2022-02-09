@@ -22,7 +22,7 @@ include_once __DIR__ . '/header.php';
         ?>
 
         <form>
-            <textarea>Order Instructions...</textarea>
+            <textarea placeholder="Order Instructions..."></textarea>
         </form>
         <a class="front-link" href="cart-login.php"> Payment
         </a>

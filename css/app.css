@@ -80,10 +80,11 @@ h1 {
     font-weight: 700;
     margin-top: 1em;
     margin-bottom: 0;
-    font-size: 1.625em;
+    font-size: 2.25em;
     text-align: center;
 
 }
+
 
 h2 {
     font-family: 'montserrat-bold';
@@ -256,6 +257,20 @@ h3 {
 
 .splash-logo {
     max-width: 100%;
+}
+
+/* Front Page */
+
+.welcome-text-on-front-page{
+    text-align: left;
+    max-width: 720px;
+    margin: auto;
+    padding: 1em;
+}
+
+
+.welcome-text-on-front-page h1{
+    text-align: left;
 }
 
 /* ---------Pick-Up Time Form------------- */

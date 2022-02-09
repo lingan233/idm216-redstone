@@ -11,7 +11,7 @@ include_once __DIR__ . '/cart.php';
     <h2>Login to Account</h2>
     <input class="login-text" type="text" placeholder="Username">
     <input class="login-text" type="text" placeholder="Password">
-    <a class="google-login" href="google.com">Login with Google</a>
+    <a class="google-login" href="payment.php">Login with Google</a>
     <a href="payment.php" id="confirm-pick-up-time">Confirm</a>
     <div>
     </div>
