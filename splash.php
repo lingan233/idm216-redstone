@@ -11,7 +11,7 @@
     <script>
          setTimeout(function(){
             window.location.href = 'front.php';
-         }, 5000);
+         }, 3000);
       </script>
 </head>
 <body id="splash-page">

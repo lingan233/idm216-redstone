@@ -141,7 +141,7 @@ h3 {
     text-decoration: none;
 }
 
-button {
+/* button {
     font-family: 'Raleway', sans-serif;
     background-color: #B84046;
     margin: .5rem;
@@ -153,7 +153,7 @@ button {
     width: 18rem;
     text-align: center;
     cursor: pointer;
-}
+} */
 
 .button {
     font-family: 'Raleway', sans-serif;
@@ -218,7 +218,10 @@ button {
 .cart-button {
     position: fixed;
     bottom: 0;
-    left: 10%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .button div {
