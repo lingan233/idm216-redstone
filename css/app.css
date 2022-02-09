@@ -254,6 +254,10 @@ h3 {
     width: 100%;
 }
 
+.splash-logo {
+    max-width: 100%;
+}
+
 /* ---------Pick-Up Time Form------------- */
 /* NOTICE: Because the Alpha has no Database functionality, the styles are currently applied to <a> tags. Will need to with <form> and <input> tags for final */
 

@@ -15,6 +15,6 @@
       </script>
 </head>
 <body id="splash-page">
-    <img src="https://via.placeholder.com/200">
+    <img src="imgs/splash-logo.png" class="splash-logo">
 </body>
 </html>
