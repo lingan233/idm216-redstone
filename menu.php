@@ -18,7 +18,7 @@ include_once __DIR__ . '/header.php';
         include __DIR__ . '/pizza-item.php';
 
         $itemLink = '';
-        $itemImg = 'plain-pizza.png';
+        $itemImg = 'pepperoni-pizza.png';
         $itemName = 'Pepperoni';
         $itemDescription = 'Fresh tomato sauce, mozzarella and pepperoni';
         $itemPrice = '$12.00';
