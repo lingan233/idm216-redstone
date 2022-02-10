@@ -1,6 +1,6 @@
 <section class="order-confirmation">
     <div>
-        <img src="imgs/Menu/plain_pizza_menu.png" width="100px" alt=""></img>
+        <img src="imgs/menu/plain_pizza_menu.png" width="100px" alt=""></img>
     </div>
     <div class="menu-item-text">
         <h3>Custom Pizza</h3>
