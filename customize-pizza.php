@@ -8,7 +8,7 @@ include_once __DIR__ . '/header.php';
             <a href="menu-with-cart.php" class="small-button">Done</a>
         </div>
 
-        <img src="imgs/Menu/plain_pizza_menu.png" alt="">
+        <img src="imgs/menu/plain_pizza_menu.png" alt="">
 
         <div class="topping-container white-background">
 
