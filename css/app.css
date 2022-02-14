@@ -1,3 +1,5 @@
+/* ---------General------------- */
+
 :root {
 
     --white: #ffffff;
@@ -5,7 +7,6 @@
     --orange: #ec7e5b;
     --red: #b84046;
     --black: #454141;
-
 }
 
 /* Custom Font Rules */
@@ -82,7 +83,6 @@ h1 {
     margin-bottom: 0;
     font-size: 2.25em;
     text-align: center;
-
 }
 
 
@@ -99,6 +99,24 @@ h3 {
     font-weight: 100;
     font-size: 1.25em;
 }
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    background-color: #B84046;
+    margin: .5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    width: 18rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* ---------Front Page------------- */
 
 #header-text {
     color: var(--crimson);
@@ -142,40 +160,6 @@ h3 {
     text-decoration: none;
 }
 
-/* button {
-    font-family: 'Raleway', sans-serif;
-    background-color: #B84046;
-    margin: .5rem;
-    padding: 1rem;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    font-weight: bold;
-    width: 18rem;
-    text-align: center;
-    cursor: pointer;
-} */
-
-.button {
-    font-family: 'Raleway', sans-serif;
-    background-color: #B84046;
-    margin: .5rem;
-    padding: 1rem;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    font-weight: bold;
-    display: block;
-    margin: auto;
-    width: 18rem;
-    text-align: center;
-    cursor: pointer;
-}
-
-/* .gray-background {
-    background-color: #F6F5F8;
-} */
-
 .align-center-text {
     text-align: center;
 }
@@ -196,13 +180,10 @@ h3 {
     height: 30em;
     border-radius: 1em;
     top: 10%;
-
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .menu-item-text {
     color: var(--black);
-    /* min-width: 60%; */
     width: 85%;
     font-family: 'raleway-normal';
     margin: 0;
@@ -235,13 +216,7 @@ h3 {
     margin-left: auto;
     margin-top: -1rem;
 }
-.orange-text {
-    color: var(--orange);
-}
 
-.white-text {
-    color: white;
-}
 
 /* ---------Splash Page------------- */
 
@@ -369,14 +344,20 @@ section div {
     padding-top: 1em;
 }
 
-
-
 .no-underline {
     text-decoration: none;
 }
 
 a {
     cursor: pointer;
+}
+
+.orange-text {
+    color: var(--orange);
+}
+
+.white-text {
+    color: white;
 }
 
 /* ---------Select Base Page------------- */
