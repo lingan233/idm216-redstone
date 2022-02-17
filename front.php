@@ -8,8 +8,8 @@ include_once __DIR__ . '/header.php';
 </div>
 <main class="wrapper">
     <img class="map" src="imgs/map-placeholder.png" alt="map">
-    <a href="front-pick-up.php" class="front-link">Start a New Order</a>
-    <a href="" class="front-link">Review Order History</a>
+    <a href="front-pick-up.php" class="button">Start a New Order</a>
+    <a href="" class="button">Review Order History</a>
 
 <?php
 include_once __DIR__ . '/footer.php';

@@ -85,7 +85,7 @@ include_once __DIR__ . '/header.php';
                     <span class="topping-price">+$1.00</span>
                 </label>
             </form>
-            <a href="cart.php" class="front-link" id="done-link">Done</a>
+            <a href="cart.php" class="button" id="done-link">Done</a>
         </div>
     </div>
 </main>

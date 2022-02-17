@@ -104,17 +104,33 @@ h3 {
     font-family: 'Raleway', sans-serif;
     background-color: #B84046;
     margin: .5rem;
+    margin-top: 1rem;
     padding: 1rem;
     border: none;
     border-radius: 50px;
     color: white;
     font-weight: bold;
     display: block;
-    margin: auto;
+    /* margin: auto; */
     width: 18rem;
     text-align: center;
+    text-decoration: none;
     cursor: pointer;
 }
+
+/* .front-link {
+    font-family: 'Raleway', sans-serif;
+    background-color: #B84046;
+    margin-top: 1em;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    width: 18rem;
+    text-align: center;
+    text-decoration: none;
+} */
 
 @keyframes shrink {
     0% {}
@@ -159,7 +175,7 @@ h3 {
     max-width: 100%;
 }
 
-/* Front Page */
+/* -------------------------Front Page--------------------- */
 
 .welcome-text-on-front-page{
     text-align: left;
@@ -168,12 +184,9 @@ h3 {
     padding: 1em;
 }
 
-
 .welcome-text-on-front-page h1{
     text-align: left;
 }
-
-/* -------------------------Front Page--------------------- */
 
 #header-text {
     color: var(--crimson);
@@ -203,19 +216,7 @@ h3 {
     align-items: center;
 }
 
-.front-link {
-    font-family: 'Raleway', sans-serif;
-    background-color: #B84046;
-    margin-top: 1em;
-    padding: 1rem;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    font-weight: bold;
-    width: 18rem;
-    text-align: center;
-    text-decoration: none;
-}
+
 
 .align-center-text {
     text-align: center;
