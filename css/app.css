@@ -722,3 +722,23 @@ textarea {
     font-weight: bold;
 }
 
+/* ----------------------- Shopping Cart Microinteractions --------------------- */
+
+.order-shopping-cart{
+    
+}
+
+.order-shopping-cart-number{
+    background-color: var(--white);
+    padding: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .75em;
+    padding-bottom: .75em;
+    border-radius: 2em;
+    display: inline;
+    color: black;
+    font-weight: bold;
+    font-family: 'raleway-bold';
+    border: .5em solid var(--black)
+}
