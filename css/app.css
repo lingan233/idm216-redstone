@@ -724,9 +724,6 @@ textarea {
 
 /* ----------------------- Shopping Cart Microinteractions --------------------- */
 
-.order-shopping-cart{
-    
-}
 
 .order-shopping-cart-number{
     background-color: var(--white);
@@ -741,4 +738,28 @@ textarea {
     font-weight: bold;
     font-family: 'raleway-bold';
     border: .5em solid var(--black)
+}
+
+/* ----------------------- Login Template --------------------- */
+
+.sign-up-box{
+    width: 30em;
+    text-align: center;
+    background-color: var(--white);
+    flex-flow: column wrap;
+    display: flex;
+}
+
+.sign-up-box input{
+    padding: 1em;
+    margin: .25em;
+}
+
+.sign-up-box button{
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.sign-up-box button:hover{
+    cursor: pointer;
 }
