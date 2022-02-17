@@ -9,7 +9,7 @@ include_once __DIR__ . '/header.php';
 <main class="wrapper">
     <img class="map" src="imgs/map-placeholder.png" alt="map">
     <a href="front-pick-up.php" class="button">Start a New Order</a>
-    <a href="" class="button">Review Order History</a>
+    <a href="" class="button less-top-margin">Review Order History</a>
             <div class="pop-up white-background">
                 <a href="front.php" class="close"><img src="svg/ui-cross.svg" height="20" width="20"></a>
                 <h2>Pick Up Times</h2>

@@ -118,6 +118,10 @@ h3 {
     cursor: pointer;
 }
 
+.less-top-margin {
+    margin-top: .5rem;
+}
+
 /* .front-link {
     font-family: 'Raleway', sans-serif;
     background-color: #B84046;
@@ -143,6 +147,7 @@ h3 {
     0% {}
     100% {
         padding: 1.25rem;
+        width: 18.5rem;
     }
 }
 
