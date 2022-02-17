@@ -116,6 +116,33 @@ h3 {
     cursor: pointer;
 }
 
+@keyframes shrink {
+    0% {}
+    100% {
+        padding: 1rem;
+    }
+}
+
+@keyframes enlarge {
+    0% {}
+    100% {
+        padding: 1.25rem;
+    }
+}
+
+.button:hover {
+    animation: enlarge;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+
+.button:focus {
+    animation-name: shrink;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    cursor: default;
+}
+
 /* -------------------------Splash Page--------------------- */
 
 #splash-page {
