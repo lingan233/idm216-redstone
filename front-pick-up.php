@@ -18,7 +18,7 @@ include_once __DIR__ . '/header.php';
                 <a class="false-pick-up-time">11:00 AM</a>
                 <a class="false-pick-up-time">11:15 AM</a>
                 <a class="false-pick-up-time">11:30 AM</a>
-                <a href="menu.php" id="confirm-pick-up-time">Confirm</a>
+                <a href="menu.php" class="small-button" id="confirm-pick-up-time">Confirm</a>
             <div>
 
 <?php

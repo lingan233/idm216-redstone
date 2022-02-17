@@ -100,6 +100,8 @@ h3 {
     font-size: 1.25em;
 }
 
+/* -------------------------Button--------------------- */
+
 .button {
     font-family: 'Raleway', sans-serif;
     background-color: #B84046;
@@ -136,6 +138,35 @@ h3 {
     text-decoration: none;
 } */
 
+@keyframes shrink-static-width {
+    0% {}
+    100% {
+        padding: 1rem;
+        width: 18rem;
+    }
+}
+
+@keyframes enlarge-static-width {
+    0% {}
+    100% {
+        padding: 1.25rem;
+        width: 18.5rem;
+    }
+}
+
+.button:hover {
+    animation: enlarge-static-width;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+
+.button:focus {
+    animation-name: shrink-static-width;
+    animation-duration: .75s;
+    animation-fill-mode: forwards;
+    cursor: default;
+}
+
 @keyframes shrink {
     0% {}
     100% {
@@ -147,19 +178,18 @@ h3 {
     0% {}
     100% {
         padding: 1.25rem;
-        width: 18.5rem;
     }
 }
 
-.button:hover {
+.small-button:hover {
     animation: enlarge;
     animation-duration: .25s;
     animation-fill-mode: forwards;
 }
 
-.button:focus {
+.small-button:focus {
     animation-name: shrink;
-    animation-duration: .5s;
+    animation-duration: .75s;
     animation-fill-mode: forwards;
     cursor: default;
 }

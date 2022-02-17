@@ -75,8 +75,10 @@ include_once __DIR__ . '/header.php';
             <p>$12.75</p>
         </div>
     </div>
+<div class="wrapper">
+        <a href="ready-pickup.php" class="button">Confirm Order</a>
+</div>
 
-    <a href="ready-pickup.php" class="button no-underline">Confirm Order</a>
 
 </main>
 <?php
