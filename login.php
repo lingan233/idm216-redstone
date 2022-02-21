@@ -14,7 +14,6 @@ include_once __DIR__ . '/front.php';
             <input class="login-text" type="text" placeholder="Username" id="username" name="username">
             <input class="login-text" type="text" placeholder="Password" id="password" name="password">
             <a class="google-login" href="payment.php">Login with Google</a>
-            <!-- <a href="menu.php" class="small-button" id="confirm-pick-up-time">Confirm</a> -->
             <input type="submit" value="Login" class="small-button" id="confirm-pick-up-time">
         </form>
 
