@@ -42,7 +42,7 @@ include_once __DIR__ . '/header.php';
         <form>
             <textarea placeholder="Order Instructions..."></textarea>
         </form>
-        <a class="button" href="cart-login.php"> Payment
+        <a class="button" href="payment.php"> Payment
         </a>
 
     </div>

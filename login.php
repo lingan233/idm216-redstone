@@ -3,7 +3,7 @@ include_once __DIR__ . '/header.php';
 ?>
 
 <?php
-include_once __DIR__ . '/cart.php';
+include_once __DIR__ . '/front.php';
 ?>
 <div class="wrapper">
     <div class="pop-up white-background">
@@ -13,7 +13,7 @@ include_once __DIR__ . '/cart.php';
             <input class="login-text" type="text" placeholder="Username">
             <input class="login-text" type="text" placeholder="Password">
             <a class="google-login" href="payment.php">Login with Google</a>
-            <a href="payment.php" class="small-button" id="confirm-pick-up-time">Confirm</a>
+            <a href="menu.php" class="small-button" id="confirm-pick-up-time">Confirm</a>
         </form>
 
         <div>

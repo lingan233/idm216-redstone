@@ -9,9 +9,9 @@ include_once __DIR__ . '/header.php';
 
 <div class="action-box">
     <h2>Start by logging in or checking out the menu</h2>
-    <a class="big-red-button" href="menu.php">new order</a>
+    <a class="big-red-button" href="menu.php">menu</a>
     <p id="action-box-or">or</p>
-    <a class="big-red-button">login</a>
+    <a class="big-red-button" href="login.php">login</a>
     
 </div>
 <h2>We're Located At</h2>
