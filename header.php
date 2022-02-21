@@ -21,7 +21,7 @@ session_start();
 
 <body>
 
-<div class="hamburger-menu-background-darken">
+<div class="hamburger-menu-background-darken" display="hidden">
     <div class="hamburger-menu">
         <div class="hamburger-menu-exit"><img src="svg/ui-cross.svg" type="image/svg+xml"></div>
         <a class="hamburger-menu-link" href="index.php">Home</a>
