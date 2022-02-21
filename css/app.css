@@ -6,7 +6,8 @@
     --crimson: #660a04;
     --orange: #ec7e5b;
     --red: #b84046;
-    --black: #454141;
+    --black: #312e31;
+    --grey: #6b6b6d;
 }
 
 /* Custom Font Rules */
@@ -65,16 +66,31 @@ body {
     width: 100%;
     height: 100%;
     color: var(--white);
-    background-color: #454141;
+    background-color: var(--black);
 }
 
+/* Header Styles */
+
 header {
-    background-color: #ec7e5b;
+    background-color: var(--black);
     min-height: 4rem;
+    display: grid;
+    grid-template-columns: auto 12.5em auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#header-logo{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--grey);
+    height: 100%;
+    border-radius: 0 0 .5em .5em;
+    padding-top: 10px;
 }
+
 
 h1 {
     font-family: 'montserrat-bold';
@@ -785,3 +801,77 @@ textarea {
     font-weight: bold;
 }
 
+/* ----------------------- Shopping Cart Microinteractions --------------------- */
+
+
+.order-shopping-cart-number{
+    background-color: var(--white);
+    padding: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .75em;
+    padding-bottom: .75em;
+    border-radius: 2em;
+    display: inline;
+    color: black;
+    font-weight: bold;
+    font-family: 'raleway-bold';
+    border: .5em solid var(--black)
+}
+
+/* ----------------------- Login Template --------------------- */
+
+.sign-up-box{
+    width: 30em;
+    text-align: center;
+    background-color: var(--white);
+    flex-flow: column wrap;
+    display: flex;
+}
+
+.sign-up-box input{
+    padding: 1em;
+    margin: .25em;
+}
+
+.sign-up-box button{
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.sign-up-box button:hover{
+    cursor: pointer;
+}
+
+/*Pick-up Times*/
+
+.pick-up-time {
+    display: block;
+    padding: none;
+    border-radius: 1em;
+
+}
+
+.pick-up-time:hover {
+    cursor: pointer;
+}
+
+.pick-up-time>input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.pick-up-time>input+div {
+    border: 2px solid #b84046;
+}
+
+.pick-up-time>input:checked+div {
+    background-color: #b84046;
+    color: white;
+    border: 2px solid #b84046;
+}
+
+#pick-up-choose {
+    width: 90%;
+    margin: auto;
+}
