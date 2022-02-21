@@ -6,7 +6,8 @@
     --crimson: #660a04;
     --orange: #ec7e5b;
     --red: #b84046;
-    --black: #454141;
+    --black: #312e31;
+    --grey: #6b6b6d;
 }
 
 /* Custom Font Rules */
@@ -65,16 +66,31 @@ body {
     width: 100%;
     height: 100%;
     color: var(--white);
-    background-color: #454141;
+    background-color: var(--black);
 }
 
+/* Header Styles */
+
 header {
-    background-color: #ec7e5b;
+    background-color: var(--black);
     min-height: 4rem;
+    display: grid;
+    grid-template-columns: auto 12.5em auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#header-logo{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--grey);
+    height: 100%;
+    border-radius: 0 0 .5em .5em;
+    padding-top: 10px;
 }
+
 
 h1 {
     font-family: 'montserrat-bold';

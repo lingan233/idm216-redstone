@@ -15,5 +15,7 @@
 
 <body>
 <header>
-<p id="header-text">Redstone</p>
+    <div id="header-hamburger-navigation"> </div>
+    <div id="header-logo"><img src="svg/small-logo.svg" type="image/svg+xml"></div>
+    <div id="header-search"></div>
 </header>

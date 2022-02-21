@@ -15,6 +15,6 @@
       </script>
 </head>
 <body id="splash-page">
-    <img src="imgs/splash-logo.png" class="splash-logo">
+    <img src="svg/logo.svg" type="image/svg+xml" class="splash-logo">
 </body>
 </html>
