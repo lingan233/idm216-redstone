@@ -763,3 +763,36 @@ textarea {
 .sign-up-box button:hover{
     cursor: pointer;
 }
+
+/*Pick-up Times*/
+
+.pick-up-time {
+    display: block;
+    padding: none;
+    border-radius: 1em;
+
+}
+
+.pick-up-time:hover {
+    cursor: pointer;
+}
+
+.pick-up-time>input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.pick-up-time>input+div {
+    border: 2px solid #b84046;
+}
+
+.pick-up-time>input:checked+div {
+    background-color: #b84046;
+    color: white;
+    border: 2px solid #b84046;
+}
+
+#pick-up-choose {
+    width: 90%;
+    margin: auto;
+}
