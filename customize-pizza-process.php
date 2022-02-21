@@ -1,5 +1,6 @@
 <?php
-session_start();
+include_once __DIR__ . '/header.php';
+
 // print_r(array_values($CustomizeArray[]));
 $customizeArray = [];
 
