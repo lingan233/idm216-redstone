@@ -20,8 +20,19 @@ session_start();
 </head>
 
 <body>
+
+<div class="hamburger-menu-background-darken">
+    <div class="hamburger-menu">
+        <div class="hamburger-menu-exit"><img src="svg/ui-cross.svg" type="image/svg+xml"></div>
+        <a class="hamburger-menu-link" href="index.php">Home</a>
+        <a class="hamburger-menu-link" href="menu.php">Menu</a>
+        <a class="hamburger-menu-link" href="order-history.php">Past Orders</a>
+        <div class="hamburger-menu-logout" onclick="logoutUser()">Logout</div>
+    </div>
+</div>
+
 <header>
-    <div id="header-hamburger-navigation"> </div>
+    <div id="header-hamburger-navigation"></div>
     <div id="header-logo"><img src="svg/small-logo.svg" type="image/svg+xml"></div>
     <div id="header-search"></div>
 </header>
