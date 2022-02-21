@@ -18,15 +18,20 @@ include_once __DIR__ . '/header.php';
         // //On page 2.
         $var_value = $_SESSION['customizeValues'];
 
-        echo '<pre>  $var_value: <br>';
-        var_dump($var_value);
-        echo '</pre>';
+        // echo '<pre>  $var_value: <br>';
+        // var_dump($var_value);
+        // echo '</pre>';
 
         // echo '+' . $var_value[0];
         // echo '+' . $var_value[1];
         $varString = '';
-        $varString = '+' . $var_value[0] . '<br>' . '+' . $var_value[1];
-        echo $varString;
+        // $varString = '+' . $var_value[0] . '<br>' . '+' . $var_value[1];
+        // echo $varString;
+
+        foreach ($var_value as $value) {
+            $varString .= "+ $value <br>";
+        }
+
         $itemImg = 'plain-pizza.png';
         $itemName = 'Custom Order';
         $itemDescription = $varString;

@@ -3,38 +3,20 @@ session_start();
 // print_r(array_values($CustomizeArray[]));
 $customizeArray = [];
 
-if (!empty($_POST)) {
-    // echo "submited";
-    // echo '<pre>  $_POST: <br>';
-    // var_dump($_POST);
-    // echo '</pre>';
-    $customizeArray = $_POST;
-    // echo '<pre>  $CustomizeArray: <br>';
-    // var_dump($customizeArray);
-    // echo '</pre>';
+$customizeArray = $_POST;
+include __DIR__ . '/menu-with-cart.php';
 
-    include __DIR__ . '/menu-with-cart.php';
-} else {
-    echo "ERROR: not submited";
-}
+$customizeValues = array_values($customizeArray);
 
-// echo '<pre>  $CustomizeArray: <br>';
-// var_dump($customizeArray);
-// echo '</pre>';
+// echo '+' . $customizeValues[0];
+// echo '+' . $customizeValues[1];
+// echo '+' . $customizeValues[2];
+// echo '+' . $customizeValues[3];
+// echo '+' . $customizeValues[4];
 
-// print_r($customizeArray);
-    $customizeValues = array_values($customizeArray);
+echo '<pre>  $customizeValues: <br>';
+var_dump($customizeValues);
+echo '</pre>';
 
-    // echo '+' . $customizeValues[0];
-    // echo '+' . $customizeValues[1];
-    // echo '+' . $customizeValues[2];
-    // echo '+' . $customizeValues[3];
-    // echo '+' . $customizeValues[4];
-
-    echo '<pre>  $customizeValues: <br>';
-    var_dump($customizeValues);
-    echo '</pre>';
-
-    //On page 1.
-    $_SESSION['customizeValues'] = $customizeValues;
-
+//On page 1.
+$_SESSION['customizeValues'] = $customizeValues;
