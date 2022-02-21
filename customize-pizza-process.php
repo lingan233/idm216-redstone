@@ -11,8 +11,10 @@ if (!empty($_POST)) {
     // echo '<pre>  $CustomizeArray: <br>';
     // var_dump($customizeArray);
     // echo '</pre>';
+
+    include __DIR__ . '/menu-with-cart.php';
 } else {
-    echo "not submited";
+    echo "ERROR: not submited";
 }
 
 // echo '<pre>  $CustomizeArray: <br>';
@@ -20,13 +22,14 @@ if (!empty($_POST)) {
 // echo '</pre>';
 
 // print_r($customizeArray);
+    $customizeValues = array_values($customizeArray);
 
-$customizeValues = array_values($customizeArray);
+    // echo '+' . $customizeValues[0];
+    // echo '+' . $customizeValues[1];
+    // echo '+' . $customizeValues[2];
+    // echo '+' . $customizeValues[3];
+    // echo '+' . $customizeValues[4];
 
-echo '+' . $customizeValues[0];
-echo '+' . $customizeValues[1];
-echo '+' . $customizeValues[2];
-echo '+' . $customizeValues[3];
-echo '+' . $customizeValues[4];
+    //On page 1.
+    $_SESSION['customizeValues'] = $customizeValues;
 
-include __DIR__ . '/menu-with-cart.php';
