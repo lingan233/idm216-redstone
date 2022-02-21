@@ -1,21 +1,25 @@
 <?php
+include_once __DIR__ . '/header.php';
 
 if (!empty($_POST)) {
 
-    if (empty($_POST['username']) || empty($_POST['passwd'])) {
+    if (empty($_POST['username']) || empty($_POST['password'])) {
 
         echo 'please fill in both the user name and password';
 
     } else {
 
-        if (verify_user('usernames.txt',$_POST['username'],$_POST['passwd']) == 1)) {
+        // if (verify_user('usernames.txt',$_POST['username'],$_POST['password']) == 1) {
 
-            echo "User name matched!<br />";
+        //     echo "User name matched!<br />";
 
-        } else {
+        // } else {
 
-            echo "username does not exist";
-        }
+        //     echo "username does not exist";
+        // }
+
+        echo "User name matched!";
+    
     }
-}
+} 
 ?>

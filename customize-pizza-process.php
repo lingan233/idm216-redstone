@@ -15,9 +15,9 @@ $customizeValues = array_values($customizeArray);
 // echo '+' . $customizeValues[3];
 // echo '+' . $customizeValues[4];
 
-echo '<pre>  $customizeValues: <br>';
-var_dump($customizeValues);
-echo '</pre>';
+// echo '<pre>  $customizeValues: <br>';
+// var_dump($customizeValues);
+// echo '</pre>';
 
 //On page 1.
 $_SESSION['customizeValues'] = $customizeValues;
