@@ -116,6 +116,104 @@ h3 {
     font-size: 1.25em;
 }
 
+.action-box{
+    background-color: var(--white);
+    max-width: 720px;
+    margin: 1em;
+    color: var(--black);
+    border-radius: .5em;
+    font-family: 'raleway-normal';
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: .25em;
+    padding-bottom: 2em;
+    font-size: 1.25em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.action-box h2{
+    font-family: 'raleway-normal';
+    font-weight: 1000;
+    margin-bottom: 1.5em;
+}
+
+
+.big-red-button{
+    background-color: var(--red);
+    color: var(--white);
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'montserrat-bold';
+    font-weight: 100;
+    border-radius: .5em;
+    padding: .75em;
+    border: none;
+    width: 10em;
+    display: block;
+}
+
+.big-red-button:hover {
+    animation: enlarge-button-width;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.big-red-button:focus {
+    animation-name: shrink-button-width;
+    animation-duration: .75s;
+    animation-fill-mode: forwards;
+    cursor: default;
+}
+
+#action-box-or{
+    text-transform: uppercase;
+    padding: .5em;
+}
+
+@keyframes shrink-button-width {
+    0% {}
+    100% {
+        padding: 1rem;
+        width: 12rem;
+    }
+}
+
+@keyframes enlarge-button-width {
+    0% {}
+    100% {
+        padding: 1.25rem;
+        width: 12.5rem;
+    }
+}
+
+.location-section-on-front-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.map-location-information-bold{
+    font-family: 'montserrat-bold';
+}
+
+.map-location-information-details{
+    font-family: 'raleway-normal';
+    padding: 0;
+    margin: 0;
+}
+
+.map-location-information{
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: .5em;
+    padding: 1em;
+}
+
+
 /* -------------------------Button--------------------- */
 
 .button {
@@ -229,14 +327,17 @@ h3 {
 /* -------------------------Front Page--------------------- */
 
 .welcome-text-on-front-page{
-    text-align: left;
+    text-align: center;
     max-width: 720px;
     margin: auto;
     padding: 1em;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .welcome-text-on-front-page h1{
-    text-align: left;
+    font-family: 'raleway-normal';
+    font-size: 1.625em;
 }
 
 #header-text {
@@ -874,4 +975,43 @@ textarea {
 #pick-up-choose {
     width: 90%;
     margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+
+    .action-box{
+        font-size: 1.75em;
+        max-width: 450px;
+    }
+    
+    
+    .action-box h2{
+        font-family: 'raleway-normal';
+        font-weight: 1000;
+        margin-bottom: 1.5em;
+    }
+
+
+    .welcome-text-on-front-page h1{
+        font-family: 'montserrat-bold';
+        font-weight: bold;
+        font-size: 3.5em;
+    }
+
+    @keyframes shrink-button-width {
+        0% {}
+        100% {
+            padding: 1rem;
+            width: 16rem;
+        }
+    }
+    
+    @keyframes enlarge-button-width {
+        0% {}
+        100% {
+            padding: 1.25rem;
+            width: 16rem;
+        }
+    }
+    
 }
