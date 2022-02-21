@@ -24,7 +24,7 @@ include_once __DIR__ . '/header.php';
                     <span class="topping-price">+$1.00</span>
                 </label>
                 <label class="container">
-                    <input type="checkbox" value="Parmesan">
+                    <input type="checkbox" value="Parmesan" id="parmesan" name="parmesan">
                     <span class="checkmark"></span>Parmesan
                     <span class="topping-price">+$1.00</span>
                 </label>

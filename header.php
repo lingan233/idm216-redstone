@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,3 +21,4 @@
 <header>
 <p id="header-text">Redstone</p>
 </header>
+
