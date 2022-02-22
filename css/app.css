@@ -445,7 +445,7 @@ h3 {
     padding: 1em;
     padding-top: 3em;
     width: 18.75em;
-    height: 30em;
+    height: 25em;
     border-radius: 1em;
     top: 10%;
 }
@@ -460,17 +460,17 @@ h3 {
 }
 
 #confirm-pick-up-time {
-    display: flex;
     padding: 1em;
     background-color: #b84046;
     border-radius: 2em;
     width: 40%;
-    justify-content: center;
     margin: .5em;
     color: white;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
+    display: block;
+    margin: 1rem auto;
 }
 
 .false-pick-up-time {
@@ -758,6 +758,8 @@ textarea {
     padding: 1em;
     margin: 1em;
     width: 70%;
+    display: block;
+    margin: 1rem auto;
 }
 
 .google-login {
@@ -766,9 +768,8 @@ textarea {
     margin: 1em;
     width: 70%;
     box-shadow: 0px 2px 5px lightgray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    margin: 1rem auto;
     text-decoration: none;
     color: black;
 }
