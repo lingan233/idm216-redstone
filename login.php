@@ -13,7 +13,7 @@ include_once __DIR__ . '/front.php';
         <form action="login-process.php" method="post">
             <input class="login-text" type="text" placeholder="Username" id="username" name="username">
             <input class="login-text" type="text" placeholder="Password" id="password" name="password">
-            <a class="google-login" href="payment.php">Login with Google</a>
+            <a class="small-button google-login" href="payment.php">Login with Google</a>
             <input type="submit" value="Login" class="small-button" id="confirm-pick-up-time">
         </form>
 
