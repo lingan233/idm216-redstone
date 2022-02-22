@@ -214,6 +214,7 @@ h3 {
     border: none;
     width: 10em;
     display: block;
+    text-align: center;
 }
 
 .big-red-button:hover {
