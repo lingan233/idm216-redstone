@@ -76,7 +76,7 @@ include_once __DIR__ . '/header.php';
         </div>
     </div>
 <div class="wrapper">
-        <a href="ready-pickup.php" class="button">Confirm Order</a>
+        <a href="pick-up-time.php" class="button">Confirm Order</a>
 </div>
 
 

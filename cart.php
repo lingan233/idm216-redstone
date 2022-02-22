@@ -14,19 +14,9 @@ include_once __DIR__ . '/header.php';
         </div>
 
         <?php
-        // echo $customizeValues = $_GET['customizeValues'];
         // //On page 2.
         $var_value = $_SESSION['customizeValues'];
-
-        // echo '<pre>  $var_value: <br>';
-        // var_dump($var_value);
-        // echo '</pre>';
-
-        // echo '+' . $var_value[0];
-        // echo '+' . $var_value[1];
         $varString = '';
-        // $varString = '+' . $var_value[0] . '<br>' . '+' . $var_value[1];
-        // echo $varString;
 
         foreach ($var_value as $value) {
             $varString .= "+ $value <br>";
@@ -42,6 +32,7 @@ include_once __DIR__ . '/header.php';
         <form>
             <textarea placeholder="Order Instructions..."></textarea>
         </form>
+        
         <a class="button" href="payment.php"> Payment
         </a>
 
