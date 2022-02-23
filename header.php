@@ -20,10 +20,9 @@ session_start();
 </head>
 
 <body>
-
-<div class="hamburger-menu-background-darken" display="hidden">
+<div class="hamburger-menu-background-darken" id="hamburger-menu-toggle" style="display: none">
     <div class="hamburger-menu">
-        <div class="hamburger-menu-exit"><img src="svg/ui-cross.svg" type="image/svg+xml"></div>
+        <div id="hamburger-menu-exit" onclick="menuClose()" style="display: none"><img src="svg/ui-cross.svg" type="image/svg+xml"></div>
         <a class="hamburger-menu-link" href="index.php">Home</a>
         <a class="hamburger-menu-link" href="menu.php">Menu</a>
         <a class="hamburger-menu-link" href="order-history.php">Past Orders</a>
@@ -32,7 +31,7 @@ session_start();
 </div>
 
 <header>
-    <div id="header-hamburger-navigation"></div>
+    <div id="header-hamburger-navigation" onclick="menuOpen()" style="display: flex"><img id="hamburger-icon "src="svg/ui-hamburger.svg" type="image/svg+xml"></div>
     <div id="header-logo"><img src="svg/small-logo.svg" type="image/svg+xml"></div>
     <div id="header-search"></div>
 </header>

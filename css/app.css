@@ -108,12 +108,11 @@ header {
     position: fixed;
     background-color: rgba(104, 104, 104, 0.5);
     width: 100%;
-    height: 100%;
-    display: none; /* Needs a function to change it from "none" to "block" to make the menu work*/
+    height: 100%; /* Needs a function to change it from "none" to "block" to make the menu work*/
 
 }
 
-.hamburger-menu-exit{
+#hamburger-menu-exit{
     display: block;
     position: inline-block;
     width: 4em;
@@ -132,10 +131,19 @@ header {
     font-family: 'raleway-normal';
 }
 
+#header-hamburger-navigation{
+    position: relative;
+    right: 1em;
+}
 
-.hamburger-menu-exit:hover{
+
+#hamburger-menu-exit:hover{
     cursor: pointer;
 
+}
+
+#header-hamburger-navigation:hover{
+    cursor: pointer;
 }
 
 .hamburger-menu-logout{
