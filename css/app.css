@@ -554,12 +554,16 @@ section div {
 }
 
 .cart-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
 }
 
 .cart-button div {
@@ -569,12 +573,28 @@ section div {
     height: 25px;
     border-radius: 50px;
     margin-right: 0;
-    margin-left: auto;
-    margin-top: -1rem;
+}
+
+
+.cart-button p{
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0;
+    padding-bottom: .25em;
 }
 
 #cart-header{
-    margin-bottom: 1em
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .price {
