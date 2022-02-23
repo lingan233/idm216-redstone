@@ -468,6 +468,10 @@ h3 {
     top: 1em;
 }
 
+.pick-up-input{
+    border-radius: 4em;
+}
+
 #confirm-pick-up-time {
     padding: 1em;
     background-color: #b84046;
@@ -1038,8 +1042,10 @@ textarea {
 
 .pick-up-time {
     display: block;
+    text-align: center;
+    width: 100%;
     padding: none;
-    border-radius: 1em;
+    margin-bottom: .25em;
 
 }
 
