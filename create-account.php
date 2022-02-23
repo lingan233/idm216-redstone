@@ -9,12 +9,13 @@ include_once __DIR__ . '/header.php';
 <main class="wrapper">
     <div class="sign-up-box">
         <form>
-            <input type="text" placeholder="Username"><br>
-            <input type="password" placeholder="Password"><br>
-            <input type="password" placeholder="Confirm Password"><br>
-            <input type="text" placeholder="Email"><br>
-            <button>Create</button>
+            <input class="login-text" type="text" placeholder="Username"><br>
+            <input class="login-text" type="password" placeholder="Password"><br>
+            <input class="login-text" type="password" placeholder="Confirm Password"><br>
+            <input class="login-text" type="text" placeholder="Email"><br>
         </form>
+
+        <a href="front.php" class="big-red-button">Create</a>
     </div class="login">
 
 <?php

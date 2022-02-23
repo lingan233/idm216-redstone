@@ -184,6 +184,11 @@ h3 {
     font-size: 1.25em;
 }
 
+a {
+    font: 'raleway-bold';
+    color: var(--crimson);
+}
+
 .action-box{
     background-color: var(--white);
     max-width: 720px;
@@ -457,6 +462,7 @@ h3 {
     height: 30rem;
     border-radius: 1em;
     top: 10%;
+    text-align: center;
 }
 
 /* -------------------------Pick-Up Time Form--------------------- */
@@ -1017,16 +1023,23 @@ textarea {
 /* ----------------------- Login Template --------------------- */
 
 .sign-up-box{
-    width: 30em;
+    width: 20em;
     text-align: center;
     background-color: var(--white);
     flex-flow: column wrap;
     display: flex;
+    border-radius: .5em;
+    align-items: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 2em;
 }
 
 .sign-up-box input{
     padding: 1em;
     margin: .25em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sign-up-box button{
@@ -1036,6 +1049,10 @@ textarea {
 
 .sign-up-box button:hover{
     cursor: pointer;
+}
+
+.sign-up-box form{
+    margin-bottom: 1em;
 }
 
 /*Pick-up Times*/
