@@ -28,7 +28,7 @@ include_once __DIR__ . '/header.php';
 
     </section>  
 
-    <a href="ready-pickup.php" class="button no-underline">Done</a>
+    <a href="front.php" class="button no-underline">Done</a>
 </main>
 
 <?php

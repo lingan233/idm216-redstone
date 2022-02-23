@@ -108,12 +108,11 @@ header {
     position: fixed;
     background-color: rgba(104, 104, 104, 0.5);
     width: 100%;
-    height: 100%;
-    display: none; /* Needs a function to change it from "none" to "block" to make the menu work*/
+    height: 100%; /* Needs a function to change it from "none" to "block" to make the menu work*/
 
 }
 
-.hamburger-menu-exit{
+#hamburger-menu-exit{
     display: block;
     position: inline-block;
     width: 4em;
@@ -132,10 +131,19 @@ header {
     font-family: 'raleway-normal';
 }
 
+#header-hamburger-navigation{
+    position: relative;
+    right: 1em;
+}
 
-.hamburger-menu-exit:hover{
+
+#hamburger-menu-exit:hover{
     cursor: pointer;
 
+}
+
+#header-hamburger-navigation:hover{
+    cursor: pointer;
 }
 
 .hamburger-menu-logout{
@@ -174,6 +182,11 @@ h3 {
     font-family: 'raleway-bold';
     font-weight: 100;
     font-size: 1.25em;
+}
+
+a {
+    font: 'raleway-bold';
+    color: var(--crimson);
 }
 
 .action-box{
@@ -449,6 +462,7 @@ h3 {
     height: 30rem;
     border-radius: 1em;
     top: 10%;
+    text-align: center;
 }
 
 /* -------------------------Pick-Up Time Form--------------------- */
@@ -458,6 +472,10 @@ h3 {
     position: absolute;
     right: 1em;
     top: 1em;
+}
+
+.pick-up-input{
+    border-radius: 4em;
 }
 
 #confirm-pick-up-time {
@@ -546,12 +564,16 @@ section div {
 }
 
 .cart-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
 }
 
 .cart-button div {
@@ -561,15 +583,28 @@ section div {
     height: 25px;
     border-radius: 50px;
     margin-right: 0;
-    margin-left: auto;
-    margin-top: -1rem;
+}
+
+
+.cart-button p{
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0;
+    padding-bottom: .25em;
+}
+
+#cart-header{
+    margin-bottom: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#cart-header{
-    margin-bottom: 1em
+.cart-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .price {
@@ -988,16 +1023,23 @@ textarea {
 /* ----------------------- Login Template --------------------- */
 
 .sign-up-box{
-    width: 30em;
+    width: 20em;
     text-align: center;
     background-color: var(--white);
     flex-flow: column wrap;
     display: flex;
+    border-radius: .5em;
+    align-items: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 2em;
 }
 
 .sign-up-box input{
     padding: 1em;
     margin: .25em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sign-up-box button{
@@ -1009,12 +1051,18 @@ textarea {
     cursor: pointer;
 }
 
+.sign-up-box form{
+    margin-bottom: 1em;
+}
+
 /*Pick-up Times*/
 
 .pick-up-time {
     display: block;
+    text-align: center;
+    width: 100%;
     padding: none;
-    border-radius: 1em;
+    margin-bottom: .25em;
 
 }
 
