@@ -287,6 +287,20 @@ a {
     padding: 1em;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customize-tip {
+    text-align: center;
+}
+
+.customize-tip input {
+    padding: .5rem;
+    margin: 1rem 0;
+}
 
 /* -------------------------Button--------------------- */
 

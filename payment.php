@@ -68,7 +68,7 @@ include_once __DIR__ . '/header.php';
                 </label>
             </div>
         </div>
-        <a id="custom-tip" href="">Enter custom amount</a>
+        <a id="custom-tip" href="customize-tip.php">Enter custom amount</a>
 
         <div id="total-details">
             <h3>Total</h3>
