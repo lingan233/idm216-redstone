@@ -302,6 +302,10 @@ a {
     margin: 1rem 0;
 }
 
+.logout {
+    margin: 3rem;
+}
+
 /* -------------------------Button--------------------- */
 
 .button {

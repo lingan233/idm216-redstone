@@ -20,19 +20,26 @@ session_start();
 </head>
 
 <body>
-<div class="hamburger-menu-background-darken" id="hamburger-menu-toggle" style="display: none">
-    <div class="hamburger-menu">
-        <div id="hamburger-menu-exit" onclick="menuClose()" style="display: none"><img src="svg/ui-cross.svg" type="image/svg+xml"></div>
-        <a class="hamburger-menu-link" href="index.php">Home</a>
-        <a class="hamburger-menu-link" href="menu.php">Menu</a>
-        <a class="hamburger-menu-link" href="order-history.php">Past Orders</a>
-        <div class="hamburger-menu-logout" onclick="logoutUser()">Logout</div>
+    <div class="hamburger-menu-background-darken" id="hamburger-menu-toggle" style="display: none">
+        <div class="hamburger-menu">
+            <div id="hamburger-menu-exit" onclick="menuClose()" style="display: none"><img src="svg/ui-cross.svg" type="image/svg+xml"></div>
+            <a class="hamburger-menu-link" href="front.php">Home</a>
+            <a class="hamburger-menu-link" href="menu.php">Menu</a>
+            <a class="hamburger-menu-link" href="order-history.php">Past Orders</a>
+            <a href="logout.php" class="no-underline">
+                <div class="hamburger-menu-logout" onclick="logoutUser()">Logout</div>
+            </a>
+
+        </div>
     </div>
-</div>
 
-<header>
-    <div id="header-hamburger-navigation" onclick="menuOpen()" style="display: flex"><img id="hamburger-icon "src="svg/ui-hamburger.svg" type="image/svg+xml"></div>
-    <div id="header-logo"><img src="svg/small-logo.svg" type="image/svg+xml"></div>
-    <div id="header-search"></div>
-</header>
+    <header>
+        <!-- <a href="front.php"> -->
+        <div id="header-hamburger-navigation" onclick="menuOpen()" style="display: flex">
+            <img id="hamburger-icon " src="svg/ui-hamburger.svg" type="image/svg+xml">
+        </div>
+        <!-- </a> -->
 
+        <div id="header-logo"><img src="svg/small-logo.svg" type="image/svg+xml"></div>
+        <div id="header-search"></div>
+    </header>
