@@ -4,6 +4,18 @@ session_start();
 // echo $_SESSION['name'];
 ?>
 
+<?php
+include 'connection.php'; //adds in the DB Connection File
+
+if (mysqli_connect_errno()) {
+    die ("Database connection failed: " . //Checks to see if we get a response. Kills the site if the response fails.
+      mysqli_connect_error() .
+      " (" . mysqli_connect_errno() . ")"
+    );
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
