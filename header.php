@@ -1,18 +1,15 @@
 <?php
 session_start();
-// $_SESSION['name'] = $_POST['name'];
-// echo $_SESSION['name'];
 ?>
 
 <?php
 include 'connection.php'; //adds in the DB Connection File
 
 if (mysqli_connect_errno()) {
-    die ("Database connection failed: " . //Checks to see if we get a response. Kills the site if the response fails.
-      mysqli_connect_error() .
-      " (" . mysqli_connect_errno() . ")"
-    );
-  }
+    die("Database connection failed: " . //Checks to see if we get a response. Kills the site if the response fails.
+        mysqli_connect_error() .
+        " (" . mysqli_connect_errno() . ")");
+}
 
 ?>
 
@@ -46,12 +43,14 @@ if (mysqli_connect_errno()) {
     </div>
 
     <header>
-        <!-- <a href="front.php"> -->
+
         <div id="header-hamburger-navigation" onclick="menuOpen()" style="display: flex">
             <img id="hamburger-icon " src="svg/ui-hamburger.svg" type="image/svg+xml">
         </div>
-        <!-- </a> -->
 
-        <div id="header-logo"><img src="svg/small-logo.svg" type="image/svg+xml"></div>
+        <a href="front.php">
+            <div id="header-logo"><img src="svg/small-logo.svg" type="image/svg+xml"></div>
+        </a>
+        
         <div id="header-search"></div>
     </header>

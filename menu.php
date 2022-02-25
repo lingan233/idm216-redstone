@@ -10,9 +10,15 @@ include_once __DIR__ . '/header.php';
         </div>
         <h2 class="menu-subhead">12" Inch Pizza</h2>
         <?php
-         include 'pizza-item.php';
-         mysqli_free_result($pizza_result);
-         mysqli_close($db_connection);
+        $itemLink = 'select-base.php';
+        $itemImg = 'plain-pizza.png';
+        $itemName = 'Custom Order';
+        $itemDescription = 'Customize your own pizza for pickup!';
+        $itemPrice = '$12.00';
+
+        include 'pizza-item.php';
+        mysqli_free_result($pizza_result);
+        mysqli_close($db_connection);
         ?>
 
     </div>

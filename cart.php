@@ -26,7 +26,7 @@ include_once __DIR__ . '/header.php';
         $itemName = 'Custom Order';
         $itemDescription = $varString;
         $itemPrice = '$12.00';
-        include __DIR__ . '/pizza-item.php';
+        include __DIR__ . '/cart-item.php';
         ?>
 
         <form>
