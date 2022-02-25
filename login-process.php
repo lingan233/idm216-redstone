@@ -6,10 +6,9 @@ include_once __DIR__ . '/front.php';
 ?>
 <div class="wrapper">
     <div class="pop-up white-background">
-        <a href="front.php" class="close"><img src="svg/ui-cross.svg" height="20" width="20"></a>
-        <!-- <div class="secondary-header">
-                <a href="front.php"><img src="svg/ui-back-arrow.svg" height="32" width="32"></a>
-        </div> -->
+        <a href="front.php" class="close">
+            <img src="svg/ui-cross.svg" height="30" width="30" class="black-svg">
+        </a>
         <?php
         $login = False;
         if (!empty($_POST)) {

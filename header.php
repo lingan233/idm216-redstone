@@ -35,9 +35,21 @@ if (mysqli_connect_errno()) {
             <a class="hamburger-menu-link" href="front.php">Home</a>
             <a class="hamburger-menu-link" href="menu.php">Menu</a>
             <a class="hamburger-menu-link" href="order-history.php">Past Orders</a>
-            <a href="logout.php" class="no-underline">
-                <div class="hamburger-menu-logout" onclick="logoutUser()">Logout</div>
-            </a>
+            <?php
+                // //On page 2.
+                $var_value = $_SESSION['login'];
+                if ($var_value == True) {
+                    echo "
+                    <a href='logout.php' class='no-underline'>
+                        <div class='hamburger-menu-logout' onclick='logoutUser()'>Logout</div>
+                    </a>";
+                } else {
+                    echo "         
+                    <a href='login.php' class='no-underline'>
+                        <div class='hamburger-menu-logout' onclick='logoutUser()'>Login</div>
+                    </a>";
+                }
+                ?>
 
         </div>
     </div>
@@ -51,6 +63,6 @@ if (mysqli_connect_errno()) {
         <a href="front.php">
             <div id="header-logo"><img src="svg/small-logo.svg" type="image/svg+xml"></div>
         </a>
-        
+
         <div id="header-search"></div>
     </header>
