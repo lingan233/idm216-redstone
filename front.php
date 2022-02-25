@@ -22,7 +22,7 @@ if ($var_value == True) {
     $var_value = $_SESSION['login'];
     if ($var_value == True) {
         echo "<div class='action-box'>
-        <h2>Start order by checking out the menu</h2>
+        <h2>Start order by selecting menu items</h2>
         <a class='big-red-button' href='menu.php'>start order / menu</a>
             </div>";
     } else {
