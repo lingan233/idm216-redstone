@@ -7,7 +7,10 @@ include_once __DIR__ . '/front.php';
 ?>
 <div class="wrapper">
     <div class="pop-up white-background">
-        <a href="front.php" class="close"><img src="svg/ui-cross.svg" height="20" width="20"></a>
+        <a href="front.php" class="close">
+            <img src="svg/ui-cross.svg" height="30" width="30" class="black-svg">
+        </a>
+        
         <h2>Login to Account</h2>
 
         <form action="login-process.php" method="post">
@@ -23,9 +26,9 @@ include_once __DIR__ . '/front.php';
     </div>
 
     <?php
-    
-// echo '<pre>  $_POST: <br>';
-// var_dump($_POST);
-// echo '</pre>';
+
+    // echo '<pre>  $_POST: <br>';
+    // var_dump($_POST);
+    // echo '</pre>';
     include_once __DIR__ . '/footer.php';
     ?>

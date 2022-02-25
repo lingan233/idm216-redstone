@@ -99,6 +99,10 @@ a {
     color: var(--crimson);
 }
 
+.black-svg {
+    filter: brightness(0%);
+}
+
 .action-box{
     background-color: var(--white);
     max-width: 720px;
@@ -388,7 +392,7 @@ header {
     display: grid;
     grid-template-columns: auto 12.5em auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
 
