@@ -1,15 +1,13 @@
 <?php
-$pizza_query = "SELECT * FROM `menu` WHERE `category` = 1"; //Asks for the database to Select all results from recipes
-$pizza_result = mysqli_query($db_connection, $pizza_query);
+$other_query = "SELECT * FROM `menu` WHERE `category` = 3"; //Asks for the database to Select all results from recipes
+$other_result = mysqli_query($db_connection, $other_query);
 if (!$pizza_result) {
     die("Database query failed.");
 }
-
 ?>
-    
-<?php
 
-while($row = mysqli_fetch_assoc($pizza_result)){
+<?php
+while ($row = mysqli_fetch_assoc($other_result)) {
 
     echo '<section>
                 <div>
@@ -20,7 +18,7 @@ while($row = mysqli_fetch_assoc($pizza_result)){
                     <p>' . $row['description'] . '</p>
                     <p class="price orange-text">$' . $row['price'] . '</p>
                  </div>
-            </section>' ;
+            </section>';
 }
 
 
