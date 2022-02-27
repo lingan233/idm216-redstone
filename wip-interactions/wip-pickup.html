@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W.I.P - Pick Up Interaction</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<!-- An explaination of how the pick-up interaction works -->
+
+<body class="interaction-test">
+
+<!-- An explaination of how the pick-up interaction works -->
+    <div class="pick-up-div">
+
+        <!-- Title on top of the selection -->
+       <h2 id="pick-up-header">Select Pickup Times</h2>
+
+        <!-- Tab links to determine which set of times the user wants to pick -->
+       <div class="pick-up-time-tabs">
+            <button class="pick-up-time-tab-link" onclick="openTimes(event, 'ASAP')">ASAP</button>
+            <button class="pick-up-time-tab-link" onclick="openTimes(event, 'Today')">Today</button>
+            <button class="pick-up-time-tab-link" onclick="openTimes(event, 'One')">Monday</button>
+            <button class="pick-up-time-tab-link" onclick="openTimes(event, 'Two')">Tuesday</button>
+       </div>
+
+       <div id="Today" class="pick-up-time-tab-content" style="display: none">
+           <form class="pick-up-time-radio-buttons">
+               <input type="radio" id="1015" name="today" value="10:15 AM">
+               <label for="1015">10:15 AM</label><br>
+               <input type="radio" id="1030" name="today" value="10:30 AM">
+               <label for="1030">10:30 AM</label><br>
+               <input type="radio" id="1045" name="today" value="10:45 AM">
+               <label for="1045">10:45 AM</label><br>
+           </form>
+       </div>
+
+       <div id="One" class="pick-up-time-tab-content" style="display: none">
+            <form class="pick-up-time-radio-buttons">
+                <input type="radio" id="215" name="monday" value="2:15 AM">
+                <label for="215">2:15 AM</label><br>
+                <input type="radio" id="230" name="monday" value="2:30 AM">
+                <label for="230">2:30 AM</label><br>
+                <input type="radio" id="245" name="monday" value="2:45 AM">
+                <label for="245">2:45 AM</label><br>
+            </form>
+        </div>
+
+        <div id="Two" class="pick-up-time-tab-content" style="display: none">
+            <form class="pick-up-time-radio-buttons"> 
+                <input type="radio" id="315" name="tuesday" value="3:15 AM">
+                <label for="315">3:15 AM</label><br>
+                <input type="radio" id="330" name="tuesday" value="3:30 AM">
+                <label for="330">3:30 AM</label><br>
+                <input type="radio" id="345" name="tuesday" value="3:45 AM">
+                <label for="345">3:45 AM</label><br>
+            </form>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="../js/pick-up-times.js"></script>
+</body>
+</html>
