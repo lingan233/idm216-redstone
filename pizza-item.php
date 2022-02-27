@@ -24,7 +24,7 @@ while ($row = mysqli_fetch_assoc($pizza_result)) {
 
     echo '<section>
                 <div>
-                    <img src="imgs/menu/<?php echo $itemImg; ?>" alt=""></img>
+                    <img src="imgs/menu/' . $row['img'] . '" alt=""></img>
                 </div>
                 <div class="menu-item-text">
                     <h3>' . $row['name'] . '</h3>
