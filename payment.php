@@ -19,7 +19,7 @@ include_once __DIR__ . '/header.php';
         </div>
     </section>
     <br>
-    <a href="" class="white-text">Use a different payment method?</a>
+    <a href="payment-method.php" class="white-text">Use a different payment method?</a>
     <div id="order-details" class="white-background">
 
         <div id="subtotal-details">
