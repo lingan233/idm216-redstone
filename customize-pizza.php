@@ -9,10 +9,14 @@ include_once __DIR__ . '/header.php';
         </div> -->
 
         <div class="secondary-header">
-                <a href="front.php"><img src="svg/ui-back-arrow.svg" height="32" width="32"></a>
+            <a href="front.php">
+                <img src="svg/ui-back-arrow.svg" height="32" width="32">
+            </a>
         </div>
 
-        <img src="imgs/menu/plain_pizza_menu.png" alt="">
+        <div class="sticky-customize-pizza">
+            <img src="imgs/menu/plain_pizza_menu.png" alt="customize pizza" id="customize-pizza-img">
+        </div>
 
         <div class="topping-container white-background">
             <form action="customize-pizza-process.php" method="post">
@@ -87,11 +91,13 @@ include_once __DIR__ . '/header.php';
                     <span class="checkmark"></span>Onions
                     <span class="topping-price">+$1.00</span>
                 </label>
-                <input type="submit" value="Done" class="button" id="done-link">
+                <input type="submit" value="Done" class="button done-link">
             </form>
         </div>
     </div>
 </main>
+
+<script src="customize-pizza.js"></script>
 
 <?php
 include_once __DIR__ . '/footer.php';

@@ -9,7 +9,9 @@ include_once __DIR__ . '/header.php';
 <main class="gray-background">
     <div class="wrapper">
         <div class="secondary-header">
-            <a href="front.php"><img src="svg/ui-back-arrow.svg" height="32" width="32"></a>
+            <a href="front.php">
+                <img src="svg/ui-back-arrow.svg" height="32" width="32">
+            </a>
             <h1 id="cart">Cart</h1>
         </div>
 

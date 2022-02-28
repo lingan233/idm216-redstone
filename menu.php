@@ -5,7 +5,9 @@ include_once __DIR__ . '/header.php';
 <main class="gray-background">
     <div class="wrapper">
         <div class="secondary-header">
-            <a href="front.php"><img src="svg/ui-back-arrow.svg" height="32" width="32"></a>
+            <a href="front.php">
+                <img src="svg/ui-back-arrow.svg" height="32" width="32">
+            </a>
             <h1>Menu</h1>
         </div>
         <h2 class="menu-subhead">10-Inch Pizza</h2>
