@@ -5,7 +5,7 @@ include_once __DIR__ . '/header.php';
 <?php
 include_once __DIR__ . '/front.php';
 ?>
-<div class="wrapper">
+<div class="background-overlay-center">
     <div class="pop-up white-background">
         <a href="front.php" class="close">
             <img src="svg/ui-cross.svg" height="30" width="30" class="black-svg">
@@ -16,15 +16,17 @@ include_once __DIR__ . '/front.php';
         <form action="login-process.php" method="post">
             <input class="login-text" type="text" placeholder="Username" id="username" name="username">
             <input class="login-text" type="password" placeholder="Password" id="password" name="password">
-            <a class="small-button google-login" href="">Login with Google</a>
+            <a href="" class="align-right-text small-text">Forget Password?</a>
+            <a class="small-button google-login" href="">
+                <img src="svg/google.svg" alt="google icon">
+                Login with Google
+                </a>
             <input type="submit" value="Login" class="small-button" id="confirm-pick-up-time">
             <a href="create-account.php">Create an account</a>
         </form>
 
-        <div>
-        </div>
     </div>
-
+</div>
     <?php
 
     // echo '<pre>  $_POST: <br>';

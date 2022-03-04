@@ -4,7 +4,7 @@ include_once __DIR__ . '/header.php';
 <?php
 include_once __DIR__ . '/front.php';
 ?>
-<div class="wrapper">
+<div class="background-overlay-center">
     <div class="pop-up white-background">
         <a href="front.php" class="close">
             <img src="svg/ui-cross.svg" height="30" width="30" class="black-svg">

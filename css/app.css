@@ -106,7 +106,8 @@ a {
 .action-box{
     background-color: var(--white);
     max-width: 720px;
-    margin: 1em;
+    margin: 1rem;
+    margin-bottom: 2rem;
     color: var(--black);
     border-radius: .5em;
     font-family: 'raleway-normal';
@@ -180,6 +181,7 @@ a {
 }
 
 .location-section-on-front-page{
+    margin: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -226,6 +228,9 @@ a {
     margin-right: 2rem;
 }
 
+.small-text {
+    font-size: .8rem;
+}
 
 /* -------------------------Button--------------------- */
 
@@ -384,7 +389,7 @@ a {
     padding: 1em;
     padding-top: 3em;
     width: 18.75em;
-    height: 30rem;
+    /* height: 30rem; */
     border-radius: 1em;
     top: 10%;
     text-align: center;
@@ -393,13 +398,25 @@ a {
 
 /* Header Styles */
 
-header {
+/* header {
     background-color: var(--black);
     min-height: 4rem;
     display: grid;
     grid-template-columns: auto 12.5em auto;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+} */
+
+#header-hamburger-navigation {
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    margin: 1rem;
+    z-index: 5;
+}
+
+header {
+    z-index: 1;
 }
 
 #header-logo{
@@ -408,7 +425,7 @@ header {
     justify-content: center;
     background-color: var(--grey);
     height: 100%;
-    border-radius: 0 0 .5em .5em;
+    /* border-radius: 0 0 .5em .5em; */
     padding-top: 10px;
 }
 
@@ -425,12 +442,23 @@ header {
     flex-direction: column;
 }
 
-.hamburger-menu-background-darken{
+.background-overlay {
     position: fixed;
     background-color: rgba(104, 104, 104, 0.5);
     width: 100%;
-    height: 100%; /* Needs a function to change it from "none" to "block" to make the menu work*/
-    z-index: 99;
+    height: 100%; 
+}
+
+.background-overlay-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(104, 104, 104, 0.5);
+    width: 100%;
+    height: 100%; 
 }
 
 #hamburger-menu-exit{
@@ -452,15 +480,9 @@ header {
     font-family: 'raleway-normal';
 }
 
-#header-hamburger-navigation{
-    position: relative;
-    right: 1em;
-}
-
 
 #hamburger-menu-exit:hover{
     cursor: pointer;
-
 }
 
 #header-hamburger-navigation:hover{
@@ -836,20 +858,16 @@ textarea {
 }
 
 .google-login {
-    border-radius: 2em;
-    padding: 1em;
-    margin: 1em;
-    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0px 2px 5px lightgray;
-    display: block;
     margin: 1rem auto;
     text-decoration: none;
-    color: black;
+    font-weight: 500;
 }
 
-.google-login:hover {
-    cursor: pointer;
-}
+
 
 /* -------------------------Order Confirmation--------------------- */
 

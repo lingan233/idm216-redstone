@@ -10,7 +10,7 @@ if ($var_value == True) {
         </div>";
 } else {
     echo "<div class='welcome-text-on-front-page'>
-            <h1>Welcome to Redstone!</h1>
+            <h1>Welcome to Red Stone!</h1>
         </div>";
 }
 ?>
@@ -39,7 +39,7 @@ if ($var_value == True) {
     <div class="location-section-on-front-page">
         <img class="map" src="imgs/map-placeholder.png" alt="map">
         <div class="map-location-information">
-            <p class="map-location-information-bold">Redstone Pizza</p>
+            <p class="map-location-information-bold">Red Stone Pizza</p>
             <p class="map-location-information-details">3315 Market Street</p>
             <p class="map-location-information-details">Philadelphia, PA</p>
             <p class="map-location-information-details">19104</p>
