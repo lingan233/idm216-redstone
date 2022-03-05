@@ -8,17 +8,21 @@ if (!$drink_result) {
 ?>
 
 
-<?php 
+<?php
 while ($row = mysqli_fetch_assoc($drink_result)) {
 
-    echo '<section class="drink-container">
-                <div class="drink-img">
+    echo '
+        <a href="<?php echo $itemLink; ?>" class="no-underline  menu-item">
+            <section>
+                <div>
                     <img src="imgs/menu/' . $row['img'] . '" alt=""></img>
                 </div>
                 <div class="menu-item-text">
                     <h3>' . $row['name'] . '</h3>
+                    <p>' . $row['description'] . '</p>
                     <p class="price orange-text">$' . $row['price'] . '</p>
-                </div>
-            </section>';
+                 </div>
+            </section>
+        </a>';
 }
 ?> 

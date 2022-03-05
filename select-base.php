@@ -15,16 +15,24 @@ include_once __DIR__ . '/header.php';
 
     <div class="secondary-header">
         <a href="menu.php">
-            <img src="svg/ui-back-arrow.svg" height="32" width="32">
+            <img src="svg/ui-back-arrow.svg" class="back-arrow">
         </a>
         <h1>Select Base</h1>
+        <div class="shop-cart-button"></div>
     </div>
-    <img src="imgs/menu/plain_pizza_menu.png" alt="">
-    <a class="button" href="customize-pizza.php">Classic Red</a>
-    <img src="imgs/menu/white_pizza.png" alt="">
-    <a class="button" href="customize-pizza.php">White</a>
-    <img src="imgs/menu/stuffed_crust.png" alt="">
-    <a class="button" href="customize-pizza.php">Stuffed Crust</a>
+    <div class="select-base-container">
+        <img src="imgs/menu/plain_pizza_menu.png" alt="">
+        <a class="button" href="customize-pizza.php">Classic Red</a>
+    </div>
+    <div class="select-base-container">
+        <img src="imgs/menu/white_pizza.png" alt="">
+        <a class="button" href="customize-pizza.php">White</a>
+    </div>
+    <div class="select-base-container">
+        <img src="imgs/menu/stuffed_crust.png" alt="">
+        <a class="button" href="customize-pizza.php">Stuffed Crust</a>
+    </div>
+
 </main>
 
 <?php

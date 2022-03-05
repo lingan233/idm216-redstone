@@ -1,14 +1,21 @@
 <?php
 include_once __DIR__ . '/header.php';
 ?>
-<main class="payment">
-
-    <h2>Review Order Details</h2>
+<main class="wrapper">
+    <div class="secondary-header">
+        <a href="javascript:history.back()">
+            <img src="svg/ui-back-arrow.svg" class="back-arrow">
+        </a>
+        <h1>Review Order</h1>
+        <div class="shop-cart-button"></div>
+    </div>
+    <h2></h2>
 
     <?php
     include __DIR__ . '/order-item.php';
     ?>
-    <section id="debit-card" class="white-background">
+
+    <section class="debit-card white-background">
         <div id="card-thumbnail">
             <img src="imgs/visa_icon.png" alt=""></img>
         </div>
@@ -18,10 +25,17 @@ include_once __DIR__ . '/header.php';
             <p id="card-number"> 1234 **** **** ****</p>
         </div>
     </section>
-    <br>
-    <a href="payment-method.php" class="white-text">Use a different payment method?</a>
-    <div id="order-details" class="white-background">
 
+    <div class="other-payment-link">
+        <a href="payment-method.php" class="white-text">
+            <p>
+                Use a different payment method?
+            </p>
+        </a>
+    </div>
+
+
+    <div id="order-details" class="white-background">
         <div id="subtotal-details">
             <h4>Subtotal</h4>
             <p>$12.00</p>
@@ -75,9 +89,8 @@ include_once __DIR__ . '/header.php';
             <p>$12.75</p>
         </div>
     </div>
-<div class="wrapper">
-        <a href="pick-up-time.php" class="button">Confirm Order</a>
-</div>
+
+    <a href="pick-up-time.php" class="button">Confirm Order</a>
 
 
 </main>

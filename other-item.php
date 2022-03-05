@@ -9,7 +9,9 @@ if (!$pizza_result) {
 <?php
 while ($row = mysqli_fetch_assoc($other_result)) {
 
-    echo '<section>
+    echo '
+        <a href="<?php echo $itemLink; ?>" class="no-underline  menu-item">
+            <section>
                 <div>
                     <img src="imgs/menu/' . $row['img'] . '" alt=""></img>
                 </div>
@@ -18,7 +20,8 @@ while ($row = mysqli_fetch_assoc($other_result)) {
                     <p>' . $row['description'] . '</p>
                     <p class="price orange-text">$' . $row['price'] . '</p>
                  </div>
-            </section>';
+            </section>
+        </a>';
 }
 
 

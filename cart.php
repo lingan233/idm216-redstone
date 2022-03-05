@@ -10,9 +10,10 @@ include_once __DIR__ . '/header.php';
     <div class="wrapper">
         <div class="secondary-header">
             <a href="front.php">
-                <img src="svg/ui-back-arrow.svg" height="32" width="32">
+                <img src="svg/ui-back-arrow.svg" class="back-arrow">
             </a>
             <h1 id="cart">Cart</h1>
+            <div class="shop-cart-button"></div>
         </div>
 
         <?php
@@ -34,7 +35,7 @@ include_once __DIR__ . '/header.php';
         <form>
             <textarea placeholder="Order Instructions..."></textarea>
         </form>
-        
+
         <a class="button" href="payment.php"> Payment
         </a>
 

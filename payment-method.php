@@ -5,9 +5,13 @@ include_once __DIR__ . '/header.php';
 <main class="gray-background">
     <div class="wrapper">
         <div class="secondary-header">
-            <a href="front.php"><img src="svg/ui-back-arrow.svg" height="32" width="32"></a>
+            <a href="front.php">
+                <img src="svg/ui-back-arrow.svg" class="back-arrow">
+            </a>
             <h1>Payment Method</h1>
+            <div class="shop-cart-button"></div>
         </div>
+
         <div class="white-background payment-method-container">
             <h2>Cash</h2>
             <div class="toggle-button" id="cash-option"></div>
