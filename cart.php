@@ -17,8 +17,11 @@ include_once __DIR__ . '/header.php';
         </div>
 
         <?php
+
+        include 'cart-order-database.php'
+
         // //On page 2.
-        $var_value = $_SESSION['customizeValues'];
+/*         $var_value = $_SESSION['customizeValues'];
         $varString = '';
 
         foreach ($var_value as $value) {
@@ -29,7 +32,7 @@ include_once __DIR__ . '/header.php';
         $itemName = 'Custom Order';
         $itemDescription = $varString;
         $itemPrice = '$12.00';
-        include __DIR__ . '/cart-item.php';
+        include __DIR__ . '/cart-item.php'; */
         ?>
 
         <form>
