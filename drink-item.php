@@ -12,7 +12,7 @@ if (!$drink_result) {
 while ($row = mysqli_fetch_assoc($drink_result)) {
 
     echo '
-        <a href="<?php echo $itemLink; ?>" class="no-underline  menu-item">
+        <a href="cart.php?id=' . $row['id'] . '" class="no-underline  menu-item">
             <section>
                 <div>
                     <img src="imgs/menu/' . $row['img'] . '" alt=""></img>
