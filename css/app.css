@@ -946,6 +946,17 @@ textarea {
     resize: none;
 }
 
+.cart-item{
+    width: 100%;
+}
+
+.cart-item-text{
+    color: var(--black);
+    width: 85%;
+    font-family: 'raleway-normal';
+    margin: 0;
+}
+
 /* -------------------------Login Page--------------------- */
 
 .login-text {

@@ -9,7 +9,7 @@ include_once __DIR__ . '/header.php';
 <main class="gray-background">
     <div class="wrapper">
         <div class="secondary-header">
-            <a href="menu-with-cart.php">
+            <a href="menu.php">
                 <img src="svg/ui-back-arrow.svg" class="back-arrow">
             </a>
             <h1 id="cart">Cart</h1>
@@ -17,6 +17,7 @@ include_once __DIR__ . '/header.php';
         </div>
 
         <?php
+            $price = 0;
             $cart_query = "SELECT * FROM `cart`"; //Asks for the database to Select all results from recipes
             $cart_result = mysqli_query($db_connection, $cart_query);
             if (!$cart_result) {
@@ -31,23 +32,28 @@ include_once __DIR__ . '/header.php';
                     if (!$cart_item_result) {
                         die("Cart item query failed..");
                     };
+    
                 
                     while ($row = mysqli_fetch_assoc($cart_item_result)){
 
-                        echo '
-                                <section>
+                        echo '<section class="cart-item">
                                     <div>
                                         <img src="imgs/menu/' . $row['img'] . '" alt=""></img>
                                     </div>
-                                    <div class="menu-item-text">
+                                    <div class="cart-item-text">
                                         <h3>' . $row['name'] . '</h3>
                                         <p>' . $row['description'] . '</p>
                                         <p class="price orange-text">$' . $row['price'] . '</p>
                                     </div>
                                 </section>';
-                    
-                        $price = $row['price'];
+                        
+
+                        $price += $row['price'];
                     };
+
+
+                
+
                 };
 
 
@@ -116,19 +122,14 @@ include_once __DIR__ . '/header.php';
         <form>
             <textarea placeholder="Order Instructions..."></textarea>
         </form>
-
-
-        <form method="post">
         
-        <input type="hidden" name="id" value="<?php echo $id;?>">
-        <input type="submit" name="add-item">
-        <label for="add-item">
-            <a class="button" href="payment.php"> <?php 
-                echo 'Payment ' . $price;
-                ?>
-            </a>
-        </label>
-        </form>
+        <a class="button" href="payment.php"> 
+        <?php
+            echo 'Payment $' . $price . '.00';
+        ?>
+        </a>
+ 
+
 
         <?php
   /*       if (isset($_POST['add-item'])) {
