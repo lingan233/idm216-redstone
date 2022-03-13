@@ -10,7 +10,9 @@ if (!$pizza_result) {
 while ($row = mysqli_fetch_assoc($other_result)) {
 
     echo '
-        <a href="cart.php?id=' . $row['id'] . '" class="no-underline  menu-item">
+        <form method="post" class="menu-item-form">
+        <input type="hidden" name="id" value=" ' . $row['id'] . '"> 
+        <button name="add-item" type="submit" href="cart.php?id=' . $row['id'] . '" class="no-underline  menu-item">
             <section>
                 <div>
                     <img src="imgs/menu/' . $row['img'] . '" alt=""></img>
@@ -19,9 +21,10 @@ while ($row = mysqli_fetch_assoc($other_result)) {
                     <h3>' . $row['name'] . '</h3>
                     <p>' . $row['description'] . '</p>
                     <p class="price orange-text">$' . $row['price'] . '</p>
-                 </div>
+                </div>
             </section>
-        </a>';
+        </button>
+        </form>';
 }
 
 
