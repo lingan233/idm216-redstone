@@ -41,7 +41,6 @@ include_once __DIR__ . '/header.php';
             <?php
             include 'drink-item.php';
             mysqli_free_result($drink_result);
-            mysqli_close($db_connection);
             ?>
         </div>
 
@@ -49,5 +48,20 @@ include_once __DIR__ . '/header.php';
 </main>
 
 <?php
+    if (isset($_POST['add-item'])) {
+        $menu_item = mysqli_real_escape_string($db_connection, $_POST['id']);
+        $query = "INSERT INTO `cart`(`menu-item`) VALUES ('{$menu_item}')";
+        $db_results = mysqli_query($db_connection, $query);
+        if ($db_results) {
+            /* header('Location: menu-with-cart.php'); */
+            die();
+        } else {
+            echo "Query didn't work";
+        }
+    }
+?>
+
+<?php
+mysqli_close($db_connection);
 include_once __DIR__ . '/footer.php';
 ?>
