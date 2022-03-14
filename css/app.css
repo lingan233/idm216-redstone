@@ -1459,5 +1459,26 @@ textarea {
         padding-bottom: 4rem;
     }
 
+    /* menu page */
+    .menu-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+
+    .menu-item section, .menu-item-form section{
+        height: 10rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+        /* menu page */
+        .menu-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 5px;
+        }
 
 }
