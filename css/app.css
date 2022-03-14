@@ -1318,11 +1318,20 @@ textarea {
 }
 
 
+/* -------------------------Responsive Design--------------------- */
 
+.header-large-screen-items {
+    display: none;
+}
+
+.map-location-text {
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
 
 @media screen and (min-width: 600px) {
 
-    .action-box {
+    /* .action-box {
         font-size: 1.75em;
         max-width: 450px;
     }
@@ -1357,6 +1366,64 @@ textarea {
             padding: 1.25rem;
             width: 16rem;
         }
+    } */
+
+
+
+
+
+    /* header style */
+
+    .header-large-screen-items {
+        display: flex;
+        margin-top: -.5rem;
     }
+
+    #header-hamburger-navigation {
+        display: none !important;
+    }
+
+    #header-logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+
+    /* front layout */
+
+    .front-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .we-are-located-container {
+        margin: 2rem 0;
+    }
+
+    .location-section-on-front-page {
+        margin: 1rem 0;
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 1fr; */
+    }
+
+    .location-section-on-front-page div {
+        /* min-width: 10rem;
+        min-height: 7rem; */
+        max-width: 20rem;
+    }
+
+    .action-box {
+        margin: .75rem;
+        padding: 2rem;
+        padding-bottom: 4rem;
+    }
+
 
 }

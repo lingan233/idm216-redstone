@@ -55,17 +55,34 @@ if (mysqli_connect_errno()) {
     </div>
 
     <header>
-
-
-
-
         <div id="header-logo">
             <a href="front.php">
                 <img src="svg/small-logo.svg" type="image/svg+xml">
             </a>
+
+            <div class="header-large-screen-items">
+                <a class="hamburger-menu-link" href="menu.php">Menu</a>
+                <a class="hamburger-menu-link" href="order-history.php">Past Orders</a>
+                <?php
+                // //On page 2.
+                $var_value = $_SESSION['login'];
+                if ($var_value == True) {
+                    echo "
+                    <a href='logout.php' class='no-underline'>
+                        <div class='hamburger-menu-logout' onclick='logoutUser()'>Logout</div>
+                    </a>";
+                } else {
+                    echo "         
+                    <a href='login.php' class='no-underline'>
+                        <div class='hamburger-menu-logout' onclick='logoutUser()'>Login</div>
+                    </a>";
+                }
+                ?>
+            </div>
         </div>
 
         <div id="header-hamburger-navigation" onclick="menuOpen()" style="display: flex">
             <img class="hamburger-icon " src="svg/ui-hamburger.svg" type="image/svg+xml">
         </div>
+
     </header>
