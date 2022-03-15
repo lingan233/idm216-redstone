@@ -69,12 +69,12 @@ if (mysqli_connect_errno()) {
                 if ($var_value == True) {
                     echo "
                     <a href='logout.php' class='no-underline'>
-                        <div class='hamburger-menu-logout' onclick='logoutUser()'>Logout</div>
+                        <div class='hamburger-menu-link' onclick='logoutUser()'>Logout</div>
                     </a>";
                 } else {
                     echo "         
                     <a href='login.php' class='no-underline'>
-                        <div class='hamburger-menu-logout' onclick='logoutUser()'>Login</div>
+                        <div class='hamburger-menu-link' onclick='logoutUser()'>Login</div>
                     </a>";
                 }
                 ?>

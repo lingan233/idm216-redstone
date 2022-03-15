@@ -4,7 +4,6 @@ html {
 }
 
 :root {
-
     --white: #ffffff;
     --crimson: #660a04;
     --orange: #ec7e5b;
@@ -126,14 +125,10 @@ a {
     align-items: center;
 }
 
-
 .action-box p {
     font-family: 'raleway-normal';
     font-weight: 1000;
 }
-
-
-
 
 .location-section-on-front-page {
     margin: 1rem;
@@ -191,6 +186,7 @@ a {
     display: block;
     width: 100%;
 }
+
 
 /* -------------------------Button--------------------- */
 
@@ -398,10 +394,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
-    padding-top: 3em;
+    padding: 3rem 1rem;
     width: 18.75em;
-    /* height: 30rem; */
     border-radius: 8px;
     top: 10%;
     text-align: center;
@@ -485,7 +479,8 @@ header {
 .hamburger-menu-link {
     margin-left: 1em;
     margin-top: .75em;
-    font-size: 2em;
+    font-size: 2rem;
+    font-weight: 600;
     color: white;
     text-decoration: none;
     font-family: 'raleway-normal';
@@ -500,7 +495,7 @@ header {
     cursor: pointer;
 }
 
-.hamburger-menu-logout {
+/* .hamburger-menu-logout {
     display: block;
     cursor: pointer;
     font-size: 2em;
@@ -510,7 +505,7 @@ header {
     margin-top: .75em;
     font-family: 'raleway-bold';
 
-}
+} */
 
 
 
@@ -1359,47 +1354,22 @@ textarea {
     padding-right: 1rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
 
-    /* .action-box {
-        font-size: 1.75em;
+    .welcome-text-on-front-page h1 {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .action-box {
+        font-size: 1.65em;
         max-width: 450px;
     }
 
-
     .action-box h2 {
-        font-family: 'raleway-normal';
         font-weight: 1000;
-        margin-bottom: 1.5em;
+        margin-bottom: 1.5rem;
     }
-
-
-    .welcome-text-on-front-page h1 {
-        font-family: 'montserrat-bold';
-        font-weight: bold;
-        font-size: 3.5em;
-    }
-
-    @keyframes shrink-button-width {
-        0% {}
-
-        100% {
-            padding: 1rem;
-            width: 16rem;
-        }
-    }
-
-    @keyframes enlarge-button-width {
-        0% {}
-
-        100% {
-            padding: 1.25rem;
-            width: 16rem;
-        }
-    } */
-
-
-
 
 
     /* header style */
@@ -1420,7 +1390,7 @@ textarea {
         padding: 1rem;
     }
 
-    .hamburger-menu-link, .hamburger-menu-logout {
+    .hamburger-menu-link {
         font-size: 1.75rem;
     }
 
@@ -1444,12 +1414,9 @@ textarea {
         grid-gap: 10px;
         padding: 10px;
         grid-template-columns: 1fr;
-        /* grid-template-rows: 1fr 1fr; */
     }
 
     .location-section-on-front-page div {
-        /* min-width: 10rem;
-        min-height: 7rem; */
         max-width: 20rem;
     }
 
@@ -1467,13 +1434,9 @@ textarea {
     }
 
     .menu-item section, .menu-item-form section{
-        height: 10rem;
-    }
+        min-height: 11.5rem;
 
-    /* select base page */
-    /* .select-base-container {
-        height: 30rem;
-    } */
+    }
 
     .button {
         width: 10rem;
