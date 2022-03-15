@@ -776,11 +776,6 @@ a {
 
 /* -------------------------Select Base Page--------------------- */
 
-.select-base img {
-    /* margin-top: 3rem; */
-    max-width: 100%;
-}
-
 .select-base-container {
     margin: 2rem;
     display: flex;
@@ -1410,7 +1405,7 @@ textarea {
 
     .header-large-screen-items {
         display: flex;
-        margin-top: -.5rem;
+        /* margin-top: -.5rem; */
     }
 
     #header-hamburger-navigation {
@@ -1422,6 +1417,10 @@ textarea {
         justify-content: flex-start;
         align-items: flex-start;
         padding: 1rem;
+    }
+
+    .hamburger-menu-link, .hamburger-menu-logout {
+        font-size: 1.75rem;
     }
 
 
@@ -1470,6 +1469,32 @@ textarea {
         height: 10rem;
     }
 
+    /* select base page */
+    /* .select-base-container {
+        height: 30rem;
+    } */
+
+    .button {
+        width: 80%;
+    }
+
+    @keyframes shrink-static-width {
+        0% {}
+    
+        100% {
+            padding: 1rem;
+            width: 80%;
+        }
+    }
+    
+    @keyframes enlarge-static-width {
+        0% {}
+    
+        100% {
+            padding: 1.25rem;
+            width: 85%;
+        }
+    }
 }
 
 
