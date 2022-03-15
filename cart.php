@@ -15,8 +15,8 @@ include_once __DIR__ . '/header.php';
             <h1 id="cart">Cart</h1>
             <div class="shop-cart-button"></div>
         </div>
-
-        <?php
+        <div class="menu-container">
+            <?php
             $price = 0;
             $cart_query = "SELECT * FROM `cart`"; //Asks for the database to Select all results from recipes
             $cart_result = mysqli_query($db_connection, $cart_query);
@@ -25,18 +25,19 @@ include_once __DIR__ . '/header.php';
             }
 
             while ($row = mysqli_fetch_assoc($cart_result)) {
-                
-                $menu_item = $row['menu-item']; 
+
+                $menu_item = $row['menu-item'];
                 $cart_item_query = "SELECT * FROM `menu` WHERE `id` = $menu_item";
                 $cart_item_result = mysqli_query($db_connection, $cart_item_query);
-                    if (!$cart_item_result) {
-                        die("Cart item query failed..");
-                    };
-    
-                
-                    while ($row = mysqli_fetch_assoc($cart_item_result)){
+                if (!$cart_item_result) {
+                    die("Cart item query failed..");
+                };
 
-                        echo '<section class="cart-item">
+
+                while ($row = mysqli_fetch_assoc($cart_item_result)) {
+
+                    echo '
+                                <section class="cart-item">
                                     <div>
                                         <img src="imgs/menu/' . $row['img'] . '" alt=""></img>
                                     </div>
@@ -45,16 +46,13 @@ include_once __DIR__ . '/header.php';
                                         <p>' . $row['description'] . '</p>
                                         <p class="price orange-text">$' . $row['price'] . '</p>
                                     </div>
-                                </section>';
-                        
-
-                        $price += $row['price'];
-                    };
+                                </section>
+                            ';
 
 
-                
-
+                    $price += $row['price'];
                 };
+            };
 
 
 
@@ -62,7 +60,7 @@ include_once __DIR__ . '/header.php';
 
 
 
-/*         if (isset($_GET['id'])){
+            /*         if (isset($_GET['id'])){
             $id = $_GET['id'];
             
             $pizza_query = "SELECT * FROM `menu` WHERE `id` = $id"; //Asks for the database to Select all results from recipes
@@ -94,14 +92,17 @@ include_once __DIR__ . '/header.php';
 
         } */
             ?>
-            <?php
-        
+
+        </div>
+
+        <?php
+
 
 
 
 
         // //On page 2.
-/*         $var_value = $_SESSION['customizeValues'];
+        /*         $var_value = $_SESSION['customizeValues'];
         $varString = '';
 
         foreach ($var_value as $value) {
@@ -115,24 +116,21 @@ include_once __DIR__ . '/header.php';
         include __DIR__ . '/cart-item.php'; */
 
 
-
-
         ?>
 
-        <form>
+        <form class="order-instructions">
             <textarea placeholder="Order Instructions..."></textarea>
         </form>
-        
-        <a class="button" href="payment.php"> 
-        <?php
+
+        <a class="button" href="payment.php">
+            <?php
             echo 'Payment $' . $price . '.00';
-        ?>
+            ?>
         </a>
- 
 
 
         <?php
-  /*       if (isset($_POST['add-item'])) {
+        /*       if (isset($_POST['add-item'])) {
 
             $menu_item = mysqli_real_escape_string($db_connection, $_POST['id']);
 

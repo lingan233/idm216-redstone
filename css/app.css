@@ -938,7 +938,7 @@ textarea {
 }
 
 .cart-item{
-    width: 100%;
+    width: 95%;
 }
 
 .cart-item-text{
@@ -1356,6 +1356,7 @@ textarea {
 
 @media screen and (min-width: 800px) {
 
+    /* front page */
     .welcome-text-on-front-page h1 {
         font-weight: bold;
         font-size: 2rem;
@@ -1405,7 +1406,7 @@ textarea {
     }
 
     .we-are-located-container {
-        margin: 2rem 0;
+        margin: 2.7rem 0;
     }
 
     .location-section-on-front-page {
@@ -1435,7 +1436,6 @@ textarea {
 
     .menu-item section, .menu-item-form section{
         min-height: 11.5rem;
-
     }
 
     .button {
@@ -1459,6 +1459,17 @@ textarea {
             width: 10.5rem;
         }
     }
+
+    .payment-method-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+    .order-instructions {
+        width: 40rem;
+    }
 }
 
 
@@ -1468,6 +1479,10 @@ textarea {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 5px;
+        }
+
+        .payment-method-grid {
+            width: 70%;
         }
 
 }
