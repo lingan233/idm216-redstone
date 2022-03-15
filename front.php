@@ -6,21 +6,22 @@ include_once __DIR__ . '/header.php';
         <div>
         <?php
         // //On page 2.
-        $var_value = $_SESSION['login'];
-        if ($var_value == True) {
+        $login = $_SESSION['login'];
+        $username = $_SESSION['username'];
+        if ($login == True) {
             echo "<div class='welcome-text-on-front-page'>
-            <h1>Hello, John!</h1>
-        </div>";
+            <h1>Hello, $username!</h1>
+                </div>";
         } else {
             echo "<div class='welcome-text-on-front-page'>
             <h1>Welcome to Red Stone!</h1>
-        </div>";
+                </div>";
         }
 
 
         // //On page 2.
-        $var_value = $_SESSION['login'];
-        if ($var_value == True) {
+        $login = $_SESSION['login'];
+        if ($login == True) {
             echo "<div class='action-box'>
         <p>Start order by selecting menu items</p>
         <a class='big-red-button' href='menu.php'>start order / menu</a>
@@ -47,9 +48,8 @@ include_once __DIR__ . '/header.php';
             <div class="map-location-information flex-container">
                 <div class="map-location-text">
                     <p class="map-location-information-bold">Red Stone Pizza</p>
-                    <p class="map-location-information-details">3315 Market Street</p>
-                    <p class="map-location-information-details">Philadelphia, PA</p>
-                    <p class="map-location-information-details">19104</p>
+                    <p class="map-location-information-details">3315 Market Street,</p>
+                    <p class="map-location-information-details">Philadelphia, PA 19104</p>
                 </div>
             </div>
         </div>
