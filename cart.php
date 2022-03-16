@@ -13,8 +13,10 @@ include_once __DIR__ . '/header.php';
         </div>
         <div class="menu-container">
             <?php
+            $session_id = session_id();
+
             $price = 0;
-            $cart_query = "SELECT * FROM `cart`"; //Asks for the database to Select all results from recipes
+            $cart_query = "SELECT * FROM `cart-" . $session_id . "`"; //Asks for the database to Select all results from recipes
             $cart_result = mysqli_query($db_connection, $cart_query);
             if (!$cart_result) {
                 die("Cart query failed..");
