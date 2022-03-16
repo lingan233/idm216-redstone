@@ -22,7 +22,7 @@ include_once __DIR__ . '/front.php';
                 Login with Google
                 </a>
             <input type="submit" value="Login" class="small-button" id="confirm-pick-up-time">
-            <a href="create-account.php">Create an account</a>
+            <a href="">Create an account</a>
         </form>
 
     </div>

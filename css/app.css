@@ -1120,7 +1120,7 @@ textarea {
 /*Pick Up Details*/
 
 #pizza-pickup {
-    padding-top: 2em;
+    margin: 2rem;
 }
 
 #pickup-details {
@@ -1160,6 +1160,7 @@ textarea {
     justify-content: space-between;
     font-weight: lighter;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 #order-locale {

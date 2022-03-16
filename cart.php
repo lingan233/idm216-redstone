@@ -2,10 +2,6 @@
 include_once __DIR__ . '/header.php';
 ?>
 
-<div>
-    <h3 class="align-center-text">Pick-up at: Drexel University</h3>
-</div>
-
 <main class="gray-background">
     <div class="wrapper">
         <div class="secondary-header">
