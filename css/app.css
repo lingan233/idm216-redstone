@@ -153,6 +153,10 @@ a {
     padding: 1em;
 }
 
+.map img {
+    border-radius: 8px;
+}
+
 .flex-container {
     display: flex;
     justify-content: center;

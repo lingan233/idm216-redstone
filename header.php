@@ -34,18 +34,18 @@ if (mysqli_connect_errno()) {
             <div id="hamburger-menu-exit" onclick="menuClose()" style="display: none"><img src="svg/ui-cross.svg" type="image/svg+xml"></div>
             <a class="hamburger-menu-link" href="front.php">Home</a>
             <a class="hamburger-menu-link" href="menu.php">Menu</a>
-            <a class="hamburger-menu-link" href="order-history.php">Past Orders</a>
+            <a class="hamburger-menu-link" href="order-history.php">Orders</a>
             <?php
             // //On page 2.
             $var_value = $_SESSION['login'];
             if ($var_value == True) {
                 echo "
-                    <a href='logout.php' class='no-underline'>
+                    <a href='logout.php' class='no-underline hamburger-menu-link'>
                         <div class='hamburger-menu-logout' onclick='logoutUser()'>Logout</div>
                     </a>";
             } else {
                 echo "         
-                    <a href='login.php' class='no-underline'>
+                    <a href='login.php' class='no-underline hamburger-menu-link'>
                         <div class='hamburger-menu-logout' onclick='logoutUser()'>Login</div>
                     </a>";
             }
@@ -62,7 +62,7 @@ if (mysqli_connect_errno()) {
 
             <div class="header-large-screen-items">
                 <a class="hamburger-menu-link" href="menu.php">Menu</a>
-                <a class="hamburger-menu-link" href="order-history.php">Past Orders</a>
+                <a class="hamburger-menu-link" href="order-history.php">Orders</a>
                 <?php
                 // //On page 2.
                 $var_value = $_SESSION['login'];
