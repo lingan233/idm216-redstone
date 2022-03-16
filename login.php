@@ -10,7 +10,7 @@ include_once __DIR__ . '/front.php';
         <a href="front.php" class="close">
             <img src="svg/ui-cross.svg" height="30" width="30" class="black-svg">
         </a>
-        
+
         <h2>Login to Account</h2>
 
         <form action="login-process.php" method="post">
@@ -20,17 +20,17 @@ include_once __DIR__ . '/front.php';
             <a class="small-button google-login" href="">
                 <img src="svg/google.svg" alt="google icon">
                 Login with Google
-                </a>
+            </a>
             <input type="submit" value="Login" class="small-button" id="confirm-pick-up-time">
             <a href="">Create an account</a>
         </form>
 
     </div>
 </div>
-    <?php
+<?php
 
-    // echo '<pre>  $_POST: <br>';
-    // var_dump($_POST);
-    // echo '</pre>';
-    include_once __DIR__ . '/footer.php';
-    ?>
+// echo '<pre>  $_POST: <br>';
+// var_dump($_POST);
+// echo '</pre>';
+include_once __DIR__ . '/footer.php';
+?>
