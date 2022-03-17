@@ -1,6 +1,6 @@
 <?php
 $username = $_SESSION['username'];
-$order_history_query = "SELECT * FROM `user-" . $username . "`"; //Asks for the database to Select all results from recipes
+$order_history_query = "SELECT * FROM `user-" . $username . "` ORDER BY `id` DESC"; //Asks for the database to Select all results from recipes
 $order_history_result = mysqli_query($db_connection, $order_history_query);
 if (!$order_history_result) {
     die("You have no previous orders. :-(");

@@ -22,6 +22,21 @@ include_once __DIR__ . '/header.php';
                 die("Cart query failed..");
             }
 
+            $var_value = $_SESSION['customizeValues'];
+            if (!$var_value){
+            } else {
+                $varString = '';
+                foreach ($var_value as $value) {
+                    $varString .= "+ $value <br>";
+                }
+                $itemImg = 'plain-pizza.png';
+                $itemName = 'Custom Order';
+                $itemDescription = $varString;
+                $itemPrice = 12.00;
+                include __DIR__ . '/cart-item.php';
+            };
+
+
             while ($row = mysqli_fetch_assoc($cart_result)) {
 
                 $menu_item = $row['menu-item'];
@@ -100,19 +115,6 @@ include_once __DIR__ . '/header.php';
 
 
         // //On page 2.
-        /*         $var_value = $_SESSION['customizeValues'];
-        $varString = '';
-
-        foreach ($var_value as $value) {
-            $varString .= "+ $value <br>";
-        }
-
-        $itemImg = 'plain-pizza.png';
-        $itemName = 'Custom Order';
-        $itemDescription = $varString;
-        $itemPrice = '$12.00';
-        include __DIR__ . '/cart-item.php'; */
-
 
         ?>
 
@@ -122,7 +124,7 @@ include_once __DIR__ . '/header.php';
 
         <a class="button" href="payment.php">
             <?php
-            echo 'Payment $' . $price . '.00';
+            echo 'Payment $' . $price + $itemPrice . '.00';
             ?>
         </a>
 
