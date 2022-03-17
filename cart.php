@@ -13,12 +13,29 @@ include_once __DIR__ . '/header.php';
         </div>
         <div class="menu-container">
             <?php
+            $session_id = session_id();
+
             $price = 0;
-            $cart_query = "SELECT * FROM `cart`"; //Asks for the database to Select all results from recipes
+            $cart_query = "SELECT * FROM `cart-" . $session_id . "`"; //Asks for the database to Select all results from recipes
             $cart_result = mysqli_query($db_connection, $cart_query);
             if (!$cart_result) {
                 die("Cart query failed..");
             }
+
+            $var_value = $_SESSION['customizeValues'];
+            if (!$var_value){
+            } else {
+                $varString = '';
+                foreach ($var_value as $value) {
+                    $varString .= "+ $value <br>";
+                }
+                $itemImg = 'plain-pizza.png';
+                $itemName = 'Custom Order';
+                $itemDescription = $varString;
+                $itemPrice = 12.00;
+                include __DIR__ . '/cart-item.php';
+            };
+
 
             while ($row = mysqli_fetch_assoc($cart_result)) {
 
@@ -98,19 +115,6 @@ include_once __DIR__ . '/header.php';
 
 
         // //On page 2.
-        /*         $var_value = $_SESSION['customizeValues'];
-        $varString = '';
-
-        foreach ($var_value as $value) {
-            $varString .= "+ $value <br>";
-        }
-
-        $itemImg = 'plain-pizza.png';
-        $itemName = 'Custom Order';
-        $itemDescription = $varString;
-        $itemPrice = '$12.00';
-        include __DIR__ . '/cart-item.php'; */
-
 
         ?>
 
@@ -120,7 +124,7 @@ include_once __DIR__ . '/header.php';
 
         <a class="button" href="payment.php">
             <?php
-            echo 'Payment $' . $price . '.00';
+            echo 'Payment $' . $price + $itemPrice . '.00';
             ?>
         </a>
 
@@ -141,6 +145,8 @@ include_once __DIR__ . '/header.php';
             }
 
         } */
+        mysqli_free_result($cart_result);
+        mysqli_free_result($cart_item_result);
         ?>
 
     </div>

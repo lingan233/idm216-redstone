@@ -1,6 +1,7 @@
 <?php
 include_once __DIR__ . '/header.php';
 
+
 ?>
 <main class="gray-background">
     <div class="wrapper">
@@ -35,10 +36,10 @@ include_once __DIR__ . '/header.php';
             mysqli_free_result($other_result);
             ?>
         </div>
-        
+
+
         <h2 class="menu-subhead">Drinks</h2>
         <div class="menu-container">
-
             <?php
             include 'drink-item.php';
             mysqli_free_result($drink_result);
@@ -49,17 +50,20 @@ include_once __DIR__ . '/header.php';
 </main>
 
 <?php
-if (isset($_POST['add-item'])) {
-    $menu_item = mysqli_real_escape_string($db_connection, $_POST['id']);
-    $query = "INSERT INTO `cart`(`menu-item`) VALUES ('{$menu_item}')";
-    $db_results = mysqli_query($db_connection, $query);
-    if ($db_results) {
-        /* header('Location: menu-with-cart.php'); */
-        die();
-    } else {
-        echo "Query didn't work";
+    if (isset($_POST['add-item'])) {
+        $session_id = session_id();
+        $create_order_query = "CREATE TABLE `local_redstone-pizza`.`cart-" . $session_id . "` ( `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'ID' , `menu-item` INT(11) NOT NULL COMMENT 'ID of the menu item.' , PRIMARY KEY (`id`)) ENGINE = InnoDB; ";
+        $create_order_result = mysqli_query($db_connection, $create_order_query);
+        $menu_item = mysqli_real_escape_string($db_connection, $_POST['id']);
+        $query = "INSERT INTO `cart-{$session_id}`(`menu-item`) VALUES ('{$menu_item}')";
+        $db_results = mysqli_query($db_connection, $query);
+        if ($db_results) {
+            /* header('Location: menu-with-cart.php'); */
+            die();
+        } else {
+            echo "Query didn't work";
+        }
     }
-}
 ?>
 
 <?php

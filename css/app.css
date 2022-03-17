@@ -277,7 +277,6 @@ a {
     border-radius: 16px;
     padding: .75em;
     border: none;
-    width: 10em;
     display: block;
     text-align: center;
 }
@@ -291,17 +290,21 @@ a {
 
 .big-red-button:focus {
     animation-name: shrink-button-width;
-    animation-duration: .75s;
+    animation-duration: .25s;
     animation-fill-mode: forwards;
     cursor: default;
 }
 
 @keyframes shrink-button-width {
-    0% {}
+    0% {
+
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 
     100% {
-        padding: 1rem;
-        width: 12rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 }
 
@@ -309,8 +312,8 @@ a {
     0% {}
 
     100% {
-        padding: 1.25rem;
-        width: 12.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
 
@@ -1344,6 +1347,16 @@ textarea {
     margin-bottom: 1em;
 }
 
+/* -------------------------Order History--------------------- */
+
+.order-info{
+    background-color: var(--white);
+    color: var(--black);
+    width: 30em;
+    padding: .75em;
+    border-radius: 4px;
+    margin: .5em;
+}
 
 /* -------------------------Responsive Design--------------------- */
 

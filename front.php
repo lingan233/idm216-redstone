@@ -1,5 +1,9 @@
 <?php
 include_once __DIR__ . '/header.php';
+
+session_regenerate_id();
+$_SESSION['customizeValues'] = null;
+
 ?>
 <main class="wrapper">
     <div class="front-layout">

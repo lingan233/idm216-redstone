@@ -1,0 +1,25 @@
+<svg width="482" height="418" viewBox="0 0 482 418" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_2_2)">
+<path d="M241 334C310.036 334 366 278.036 366 209C366 139.964 310.036 84 241 84C171.964 84 116 139.964 116 209C116 278.036 171.964 334 241 334Z" fill="#A24445"/>
+<path d="M241 334C310.036 334 366 278.036 366 209C366 139.964 310.036 84 241 84C171.964 84 116 139.964 116 209C116 278.036 171.964 334 241 334Z" stroke="white" stroke-width="16" stroke-miterlimit="10"/>
+</g>
+<path d="M244 158C254.493 158 263 149.493 263 139C263 128.507 254.493 120 244 120C233.507 120 225 128.507 225 139C225 149.493 233.507 158 244 158Z" stroke="white" stroke-width="6" stroke-miterlimit="10"/>
+<path d="M179 263C189.493 263 198 254.493 198 244C198 233.507 189.493 225 179 225C168.507 225 160 233.507 160 244C160 254.493 168.507 263 179 263Z" stroke="white" stroke-width="6" stroke-miterlimit="10"/>
+<path d="M302 263C312.493 263 321 254.493 321 244C321 233.507 312.493 225 302 225C291.507 225 283 233.507 283 244C283 254.493 291.507 263 302 263Z" stroke="white" stroke-width="6" stroke-miterlimit="10"/>
+<path d="M241.203 288.406C246.286 288.406 250.406 284.286 250.406 279.203C250.406 274.12 246.286 270 241.203 270C236.12 270 232 274.12 232 279.203C232 284.286 236.12 288.406 241.203 288.406Z" fill="white" stroke="white" stroke-width="22" stroke-miterlimit="10"/>
+<path d="M302.203 182.406C307.286 182.406 311.406 178.286 311.406 173.203C311.406 168.12 307.286 164 302.203 164C297.12 164 293 168.12 293 173.203C293 178.286 297.12 182.406 302.203 182.406Z" fill="white" stroke="white" stroke-width="22" stroke-miterlimit="10"/>
+<path d="M241.203 218.406C246.286 218.406 250.406 214.286 250.406 209.203C250.406 204.12 246.286 200 241.203 200C236.12 200 232 204.12 232 209.203C232 214.286 236.12 218.406 241.203 218.406Z" fill="white" stroke="white" stroke-width="22" stroke-miterlimit="10"/>
+<path d="M179.203 182.406C184.286 182.406 188.406 178.286 188.406 173.203C188.406 168.12 184.286 164 179.203 164C174.12 164 170 168.12 170 173.203C170 178.286 174.12 182.406 179.203 182.406Z" fill="white" stroke="white" stroke-width="22" stroke-miterlimit="10"/>
+<defs>
+<filter id="filter0_d_2_2" x="95" y="73" width="292" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="10"/>
+<feGaussianBlur stdDeviation="6.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_2"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_2" result="shape"/>
+</filter>
+</defs>
+</svg>

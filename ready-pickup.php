@@ -5,7 +5,7 @@
 include_once __DIR__ . '/header.php';
 ?>
 <main class="wrapper">
-    <img id="pizza-pickup" src="imgs/pickup_image.png" alt="pizza">
+    <img src="svg/pizza.svg" alt="pizza graphic">
     <section id="pickup-details">
 
         <h1>Ready for Pickup!</h1>
