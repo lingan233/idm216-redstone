@@ -12,6 +12,8 @@ include_once __DIR__ . '/header.php';
     </div>
 
     <p>You have not started ordering.</p>
+
+    
     <?php
     include_once __DIR__ . '/footer.php';
     ?>
