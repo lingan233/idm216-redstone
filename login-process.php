@@ -24,6 +24,8 @@ include_once __DIR__ . '/front.php';
                 <a class='big-red-button' href='menu.php'>Start Order</a> ";
                 $create_order_query = "CREATE TABLE `local_redstone-pizza`.`cart-" . $session_id . "` ( `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'ID' , `menu-item` INT(11) NOT NULL COMMENT 'ID of the menu item.' , PRIMARY KEY (`id`)) ENGINE = InnoDB; ";
                 $create_order_result = mysqli_query($db_connection, $create_order_query);
+                $create_user_table_query = "CREATE TABLE `local_redstone-pizza`.`user-" . $username . "` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `order-number` VARCHAR NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB; ";
+                $create_user_table_result = mysqli_query($db_connection, $create_user_table_query);
             }
         }
         // echo '<pre>  $login: <br>';
@@ -31,6 +33,7 @@ include_once __DIR__ . '/front.php';
         // echo '</pre>';
         $_SESSION['login'] = $login;
         $_SESSION['username'] = $username;
+
         ?>
     </div>
 </div>

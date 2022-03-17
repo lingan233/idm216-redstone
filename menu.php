@@ -1,6 +1,8 @@
 <?php
 include_once __DIR__ . '/header.php';
 
+echo session_id()
+
 ?>
 <main class="gray-background">
     <div class="wrapper">
@@ -51,6 +53,8 @@ include_once __DIR__ . '/header.php';
 <?php
     if (isset($_POST['add-item'])) {
         $session_id = session_id();
+        $create_order_query = "CREATE TABLE `local_redstone-pizza`.`cart-" . $session_id . "` ( `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'ID' , `menu-item` INT(11) NOT NULL COMMENT 'ID of the menu item.' , PRIMARY KEY (`id`)) ENGINE = InnoDB; ";
+        $create_order_result = mysqli_query($db_connection, $create_order_query);
         $menu_item = mysqli_real_escape_string($db_connection, $_POST['id']);
         $query = "INSERT INTO `cart-{$session_id}`(`menu-item`) VALUES ('{$menu_item}')";
         $db_results = mysqli_query($db_connection, $query);
