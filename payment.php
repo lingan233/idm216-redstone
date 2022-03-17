@@ -135,11 +135,18 @@ if (isset($_POST['create-order'])) {
         echo $username;
         echo "Query didn't work";
     }
+
+    mysqli_free_result($create_user_table_result);
 }
     ?>
 
 </main>
 <script src="total-price.js"></script>
 <?php
+
+mysqli_free_result($cart_result);
+mysqli_free_result($cart_item_result);
+
+
 include_once __DIR__ . '/footer.php';
 ?>
