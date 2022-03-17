@@ -1350,6 +1350,16 @@ textarea {
     margin-bottom: 1em;
 }
 
+/* -------------------------Order History--------------------- */
+
+.order-info{
+    background-color: var(--white);
+    color: var(--black);
+    width: 30em;
+    padding: .75em;
+    border-radius: 4px;
+    margin: .5em;
+}
 
 /* -------------------------Responsive Design--------------------- */
 

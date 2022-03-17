@@ -1,7 +1,6 @@
 <?php
 include_once __DIR__ . '/header.php';
 
-echo session_id()
 
 ?>
 <main class="gray-background">

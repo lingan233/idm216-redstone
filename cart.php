@@ -143,6 +143,8 @@ include_once __DIR__ . '/header.php';
             }
 
         } */
+        mysqli_free_result($cart_result);
+        mysqli_free_result($cart_item_result);
         ?>
 
     </div>
