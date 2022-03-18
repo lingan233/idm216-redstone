@@ -22,7 +22,10 @@ include_once __DIR__ . '/header.php';
                 die("Cart query failed..");
             }
 
-            $var_value = $_SESSION['customizeValues'];
+            $custom_order_query = "SELECT * FROM `custom-order-" . $session_id . "`"; //Asks for the database to Select all results from recipes
+            $custom_order_result = mysqli_query($db_connection,  $custom_order_query);
+
+           /*  $var_value = $_SESSION['customizeValues'];
             if (!$var_value){
             } else {
                 $varString = '';
@@ -34,7 +37,43 @@ include_once __DIR__ . '/header.php';
                 $itemDescription = $varString;
                 $itemPrice = 12.00;
                 include __DIR__ . '/cart-item.php';
-            };
+            }; */
+
+
+
+            while ($row = mysqli_fetch_assoc($custom_order_result)){
+
+                $usable_array = explode(",", $row['selections']);
+
+                $var_value = $usable_array;
+
+
+                    if (!$var_value){
+                    } else {
+                        $varString = '';
+                        foreach ($var_value as $value) {
+                            $varString .= "+ $value <br>";
+                        }
+                    }
+
+                echo '
+                <section class="cart-item">
+                    <div>
+                        <img src="imgs/menu/plain-pizza.png" alt=""></img>
+                    </div>
+                    <div class="cart-item-text">
+                        <h3>Custom Order</h3>
+                        <p>' . $varString . '</p>
+                        <p class="price orange-text">$' . $row['price'] . '</p>
+                    </div>
+                </section>
+                ';
+
+                $custom_price = $row['price'];
+            }
+
+
+
 
 
             while ($row = mysqli_fetch_assoc($cart_result)) {
@@ -124,7 +163,7 @@ include_once __DIR__ . '/header.php';
 
         <a class="button" href="payment.php">
             <?php
-            echo 'Payment $' . $price + $itemPrice . '.00';
+            echo 'Payment $' . $price + $custom_price . '.00';
             ?>
         </a>
 
