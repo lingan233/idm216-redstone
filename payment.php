@@ -148,7 +148,7 @@ include_once __DIR__ . '/header.php';
     <form method="post" action="ready-pickup.php" class="payment-confirmation">
         <input type="hidden" name="order-number" value="<?php echo $session_id; ?>">
         <input type="hidden" name="order-total" value="<?php echo $order_total; ?>">
-       <input class="big-red-button" name="create-order" type="submit" action="ready-pickup.php" value="Confirm Order">
+       <input class="big-red-button center-button" name="create-order" type="submit" action="ready-pickup.php" value="Confirm Order">
     </form>
 
 

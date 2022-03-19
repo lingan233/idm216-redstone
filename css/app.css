@@ -317,6 +317,10 @@ a {
     }
 }
 
+.center-button {
+    margin: auto;
+}
+
 /* -------------------------Splash Page--------------------- */
 
 #splash-page {
