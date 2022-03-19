@@ -12,6 +12,36 @@ include_once __DIR__ . '/header.php';
             <h1>Menu</h1>
             <a href="cart.php" class="shop-cart-button">
                 <img src="svg/shopcart.svg" alt="shop cart" class="shop-cart">
+                <?php
+
+                    $session_id = session_id();
+
+                    $cart_number_query = "SELECT * FROM `cart-" . $session_id . "`"; //Asks for the database to Select all results from recipes
+                    $cart_number_result = mysqli_query($db_connection, $cart_number_query);
+                    $custom_order_number_query = "SELECT * FROM `custom-order-" . $session_id . "`"; //Asks for the database to Select all results from recipes
+                    $custom_order_number_result = mysqli_query($db_connection,  $custom_order_number_query);
+                    
+                    if($cart_number_result){
+                        echo '
+                        <div class="cart-number">
+                        <p></p>
+                        </div>
+                        ';
+                    };
+
+
+                    if($custom_order_number_result){
+                        echo '
+                        <div class="cart-number">
+                        <p></p>
+                        </div>
+                        ';
+                    };
+                
+            
+                
+
+                ?>
             </a>
         </div>
 

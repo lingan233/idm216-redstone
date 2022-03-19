@@ -16,15 +16,45 @@ include_once __DIR__ . '/header.php';
             $session_id = session_id();
 
             $price = 0;
+            $custom_price = 0;
             $cart_query = "SELECT * FROM `cart-" . $session_id . "`"; //Asks for the database to Select all results from recipes
             $cart_result = mysqli_query($db_connection, $cart_query);
-            if (!$cart_result) {
-                die("Cart query failed..");
-            }
+
 
             $custom_order_query = "SELECT * FROM `custom-order-" . $session_id . "`"; //Asks for the database to Select all results from recipes
             $custom_order_result = mysqli_query($db_connection,  $custom_order_query);
+            if ($custom_order_result) {
+                while ($row = mysqli_fetch_assoc($custom_order_result)){
 
+                    $usable_array = explode(",", $row['selections']);
+    
+                    $var_value = $usable_array;
+    
+    
+                        if (!$var_value){
+                        } else {
+                            $varString = '';
+                            foreach ($var_value as $value) {
+                                $varString .= "+ $value <br>";
+                            }
+                        }
+    
+                    echo '
+                    <section class="cart-item">
+                        <div>
+                            <img src="imgs/menu/plain-pizza.png" alt=""></img>
+                        </div>
+                        <div class="cart-item-text">
+                            <h3>Custom Order</h3>
+                            <p>' . $varString . '</p>
+                            <p class="price orange-text">$' . $row['price'] . '</p>
+                        </div>
+                    </section>
+                    ';
+    
+                    $custom_price += $row['price'];
+                }
+            }
            /*  $var_value = $_SESSION['customizeValues'];
             if (!$var_value){
             } else {
@@ -39,73 +69,43 @@ include_once __DIR__ . '/header.php';
                 include __DIR__ . '/cart-item.php';
             }; */
 
+            if ($cart_result){
+                while ($row = mysqli_fetch_assoc($cart_result)) {
+
+                    $menu_item = $row['menu-item'];
+                    $cart_item_query = "SELECT * FROM `menu` WHERE `id` = $menu_item";
+                    $cart_item_result = mysqli_query($db_connection, $cart_item_query);
+                    if (!$cart_item_result) {
+                        die("Cart item query failed..");
+                    };
 
 
-            while ($row = mysqli_fetch_assoc($custom_order_result)){
+                    while ($row = mysqli_fetch_assoc($cart_item_result)) {
 
-                $usable_array = explode(",", $row['selections']);
-
-                $var_value = $usable_array;
-
-
-                    if (!$var_value){
-                    } else {
-                        $varString = '';
-                        foreach ($var_value as $value) {
-                            $varString .= "+ $value <br>";
-                        }
-                    }
-
-                echo '
-                <section class="cart-item">
-                    <div>
-                        <img src="imgs/menu/plain-pizza.png" alt=""></img>
-                    </div>
-                    <div class="cart-item-text">
-                        <h3>Custom Order</h3>
-                        <p>' . $varString . '</p>
-                        <p class="price orange-text">$' . $row['price'] . '</p>
-                    </div>
-                </section>
-                ';
-
-                $custom_price = $row['price'];
-            }
+                        echo '
+                                    <section class="cart-item">
+                                        <div>
+                                            <img src="imgs/menu/' . $row['img'] . '" alt=""></img>
+                                        </div>
+                                        <div class="cart-item-text">
+                                            <h3>' . $row['name'] . '</h3>
+                                            <p>' . $row['description'] . '</p>
+                                            <p class="price orange-text">$' . $row['price'] . '</p>
+                                        </div>
+                                    </section>
+                                ';
 
 
+                        $price += $row['price'];
+                    };
+                
+                
+                    if($cart_item_result){
+                        mysqli_free_result($cart_item_result);
+                    };
 
-
-
-            while ($row = mysqli_fetch_assoc($cart_result)) {
-
-                $menu_item = $row['menu-item'];
-                $cart_item_query = "SELECT * FROM `menu` WHERE `id` = $menu_item";
-                $cart_item_result = mysqli_query($db_connection, $cart_item_query);
-                if (!$cart_item_result) {
-                    die("Cart item query failed..");
-                };
-
-
-                while ($row = mysqli_fetch_assoc($cart_item_result)) {
-
-                    echo '
-                                <section class="cart-item">
-                                    <div>
-                                        <img src="imgs/menu/' . $row['img'] . '" alt=""></img>
-                                    </div>
-                                    <div class="cart-item-text">
-                                        <h3>' . $row['name'] . '</h3>
-                                        <p>' . $row['description'] . '</p>
-                                        <p class="price orange-text">$' . $row['price'] . '</p>
-                                    </div>
-                                </section>
-                            ';
-
-
-                    $price += $row['price'];
                 };
             };
-
 
 
 
@@ -156,14 +156,23 @@ include_once __DIR__ . '/header.php';
         // //On page 2.
 
         ?>
+<?php  if((!$cart_result) && (!$custom_order_result)){
+        die("Your cart is empty. Go back to the menu to build your meal!");
+    };?>
 
         <form class="order-instructions">
             <textarea placeholder="Order Instructions..."></textarea>
         </form>
 
         <a class="button" href="payment.php">
+            
+    
             <?php
+            if ($custom_order_result){
             echo 'Payment $' . $price + $custom_price . '.00';
+            } else {
+            echo 'Payment $' . $price . '.00';
+            }
             ?>
         </a>
 
@@ -184,8 +193,16 @@ include_once __DIR__ . '/header.php';
             }
 
         } */
-        mysqli_free_result($cart_result);
-        mysqli_free_result($cart_item_result);
+
+        if($cart_result){
+            mysqli_free_result($cart_result);
+        };
+
+        if($custom_order_result){
+            mysqli_free_result($custom_order_result);
+        };
+
+
         ?>
 
     </div>

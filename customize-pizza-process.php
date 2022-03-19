@@ -7,8 +7,6 @@ $session_id = session_id();
 $customizeArray = [];
 $customizeArray = $_POST;
 
-include __DIR__ . '/menu-with-cart.php';
-
 $customizeValues = array_values($customizeArray);
 
 
@@ -36,5 +34,4 @@ $add_custom_order_query = "INSERT INTO `custom-order-" . $session_id . "` (`orde
 $create_custom_pizza_result = mysqli_query($db_connection, $create_custom_pizza_query);
 $add_custom_order_result = mysqli_query($db_connection, $add_custom_order_query);
 
-var_dump($price);
-var_dump($_SESSION['customizeValues']);
+include __DIR__ . '/menu.php';

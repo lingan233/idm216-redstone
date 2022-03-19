@@ -1,6 +1,6 @@
 <?php
 $username = $_SESSION['username'];
-$order_history_query = "SELECT * FROM `user-" . $username . "` ORDER BY `id` DESC"; //Asks for the database to Select all results from recipes
+$order_history_query = "SELECT * FROM `user-" . $username . "` ORDER BY `id` DESC";
 $order_history_result = mysqli_query($db_connection, $order_history_query);
 if (!$order_history_result) {
     die("You have no previous orders. :-(");
@@ -15,15 +15,38 @@ while ($row = mysqli_fetch_assoc($order_history_result)) {
     $order_price = $row['total'];
     $order_list_query = "SELECT * FROM `cart-" . $order_number . "`";
     $order_list_result = mysqli_query($db_connection, $order_list_query);
-    if (!$order_history_result) {
-        die("Order list query failed!");
-    };
+    $custom_order_query = "SELECT * FROM `custom-order-" . $order_number . "`";
+    $custom_order_result = mysqli_query($db_connection, $custom_order_query);
 
     echo '
     <div class="order-info">
         <h2> Order #' . $order_id .'</h2>
     ';
 
+ if ($custom_order_result){
+    while ($row = mysqli_fetch_assoc($custom_order_result)) {
+
+        $usable_array = explode(",", $row['selections']);
+
+        $var_value = $usable_array;
+
+
+            if (!$var_value){
+            } else {
+                $varString = '';
+                foreach ($var_value as $value) {
+                    $varString .= "+ $value <br>";
+                }
+            }
+
+        echo '
+        <p><b>Custom Order</b></p>
+        <p>' . $varString . '</p>
+        ';
+    };
+};
+        
+if ($order_list_result){
     while ($row = mysqli_fetch_assoc($order_list_result)) {
 
         $menu_item = $row['menu-item'];
@@ -42,6 +65,8 @@ while ($row = mysqli_fetch_assoc($order_history_result)) {
 
         
     };
+};
+
     echo '<p class="price orange-text">$' . $order_price . '</p>
     </div>';
 

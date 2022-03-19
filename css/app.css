@@ -519,6 +519,9 @@ header {
 
 .pick-up-input {
     border-radius: 4em;
+    padding-left: .5em;
+    padding-right: .5em;
+    min-width: 5em;
 }
 
 #confirm-pick-up-time {
@@ -983,9 +986,22 @@ textarea {
     border-radius: 1.5em;
 } */
 
+.order-confirmation{
+    display: flex;
+    width: 100%;
+}
+
 
 .payment {
     margin: 1em;
+}
+
+#payment-screen{
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* #debit-card {
@@ -1037,7 +1053,6 @@ textarea {
 
 #tax-details {
     display: flex;
-
     justify-content: space-between;
 }
 
@@ -1045,10 +1060,12 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-left: 2em;
+    max-width: 400px;
 }
 
 #tip-details {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -1059,6 +1076,7 @@ textarea {
     width: 100%;
     align-items: center;
     justify-content: center;
+    height: 5em;
 }
 
 .tip-input p {
@@ -1101,7 +1119,6 @@ textarea {
 
 #tip-choose {
     width: 90%;
-    margin: auto;
 }
 
 #total-details {
@@ -1110,6 +1127,7 @@ textarea {
     margin-top: 1em;
     font-size: 1.25em;
     align-items: center;
+    border-top: 2px solid var(--grey);
 }
 
 #custom-tip {
@@ -1167,6 +1185,12 @@ textarea {
     font-weight: bold;
 }
 
+#order-total-price{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+
 /* ----------------------- Shopping Cart Microinteractions --------------------- */
 
 
@@ -1222,11 +1246,16 @@ textarea {
 
 /*Pick-up Times*/
 
+#pick-up-time{
+    display: flex;
+}
+
+
 .pick-up-time {
     display: block;
     text-align: center;
-    width: 100%;
-    padding: none;
+    max-width: 10em;
+    padding: .25em;
     margin-bottom: .25em;
 
 }
@@ -1253,6 +1282,11 @@ textarea {
 #pick-up-choose {
     width: 90%;
     margin: auto;
+}
+
+#ready-pickup-pizza{
+    width: 25%;
+    padding-bottom: 1em;
 }
 
 /* -------------------------Payment Method--------------------- */
